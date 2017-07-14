@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphic Pie</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Транспорт', 1200],
+                ['Еда', 3000],
+                ['Лекартсва',  1500],
+                ['Развлечения', 2000],
+                ['Услуги', 2500]
+            ]);
+
+            var options = {
+                title: 'My Daily Activities',
+                pieHole: 0.4
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+    <style>
+        #donutchart {
+            width: 900px;
+            height: 700px;
+        }
+        .slider-content{
+            position: relative;
+            top: 15%;
+            left: 49%;
+            color: black;
+        }
+
+        .slider-frame {
+            display: none;
+        }
+        .slider-frame--active {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .slider-arrow {
+            width: 16px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            cursor: pointer;
+        }
+        .slider-arrow--left {
+            left: 35%;
+        }
+        .slider-arrow--right {
+            right: 35%;
+        }
+    </style>
+</head>
+<body>
+    <section class="slider">
+        <div id="arrow-left" class="slider-arrow slider-arrow--left">
+            <img src="../images/LeftArrow.png">
+        </div>
+        <div id="arrow-right" class="slider-arrow slider-arrow--right">
+            <img src="../images/RightArrow.png">
+        </div>
+        <div class="slider-content">
+            <div class="slider-frame">
+                Июнь
+            </div>
+            <div class="slider-frame">
+                Июль
+            </div>
+            <div class="slider-frame">
+                Август
+            </div>
+        </div>
+    </section>
+    <div id="donutchart"></div>
+    <script>
+        var currentFrame = 0;
+        var framesList = document.getElementsByClassName('slider-frame');
+
+        setActiveFrame(currentFrame);
+
+        function setActiveFrame(number) {
+            if (number >= 0 && number < framesList.length){
+                framesList[currentFrame].classList.remove('slider-frame--active');
+                framesList[number].classList.add('slider-frame--active');
+                currentFrame = number;
+            }
+        }
+
+        function prevFrame() {
+            var prev = currentFrame == 0 ? framesList.length - 1 : currentFrame - 1;
+            setActiveFrame(prev);
+        }
+
+        function nextFrame() {
+            var next = currentFrame == framesList.length - 1 ? 0 : currentFrame + 1;
+            setActiveFrame(next);
+        }
+
+        var leftArrow = document.getElementById('arrow-left');
+        var rightArrow = document.getElementById('arrow-right');
+
+        leftArrow.onclick = prevFrame;
+        rightArrow.onclick = nextFrame;
+    </script>
+</body>
+</html>
