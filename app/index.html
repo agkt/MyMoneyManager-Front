@@ -23,7 +23,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bo.."></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
@@ -105,15 +105,15 @@
                 <div class="modal-body">
                     <form class="form-horizontal">
                         <div class="form-group">
-                            <label for="name" class="col-xs-4 control-label">Название:</label>
+                            <label for="name_wal" class="col-xs-4 control-label">Название:</label>
                             <div class="col-xs-8">
-                                <input type="email" class="form-control" id="name" placeholder="Введите название">
+                                <input type="text" class="form-control" id="name_wal" placeholder="Введите название">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="sum" class="col-xs-4 control-label">Сумма:</label>
+                            <label for="sum_wal" class="col-xs-4 control-label">Сумма:</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control" id="sum" placeholder="Введите сумму">
+                                <input type="text" class="form-control" id="sum_wal" placeholder="Введите сумму">
                             </div>
                         </div>
                         <div class="form-group">
@@ -139,16 +139,16 @@
                             <input type="file" id="exampleInputFile">
                         </div>
                         <div class="form-group">
-                            <label for="email">Название цели</label>
-                            <input type="email" class="form-control" id="email" placeholder="Машина">
+                            <label for="name_target">Название цели</label>
+                            <input type="email" class="form-control" id="name_target" placeholder="Машина">
                         </div>
                         <div class="form-group">
-                            <label for="email">Необходимая сумма</label>
-                            <input type="email" class="form-control" id="email" placeholder="1 800 000 Р">
+                            <label for="sum_target">Необходимая сумма</label>
+                            <input type="email" class="form-control" id="sum_target" placeholder="1 800 000 Р">
                         </div>
                         <div class="form-group">
-                            <label for="email">Собрано</label>
-                            <input type="email" class="form-control" id="email" placeholder="800 000 Р">
+                            <label for="have_target">Собрано</label>
+                            <input type="email" class="form-control" id="have_target" placeholder="800 000 Р">
                         </div>
                         <button type="submit" class="btn btn-default">Submit</button>
                     </form>
@@ -157,16 +157,6 @@
         </div>
     </div>
 </div>
-<script type="text/javascript">
-//    $(document).ready(function () {
-//        $('.wallet-flex-container').slick({
-//            setting-name
-//        :
-//        setting - value
-//    })
-//        ;
-//    });
-</script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
@@ -222,36 +212,6 @@
                     <img class="item__image" src="images/food.png" data-toggle="modal" data-target="#transfer-window"><br>
                     <p>1000 &#8381</p>
                 </div>
-                <!--<div class="content__container__item">-->
-                    <!--<div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img src="img/edit.png"></a></div>-->
-                    <!--<a>Еда</a><br>-->
-                    <!--<img class="item__image" src="img/food.png" data-toggle="modal" data-target="#transfer-window"><br>-->
-                    <!--<p>1000 &#8381</p>-->
-                <!--</div>-->
-                <!--<div class="content__container__item">-->
-                    <!--<div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img src="img/edit.png"></a></div>-->
-                    <!--<a>Еда</a><br>-->
-                    <!--<img class="item__image" src="img/food.png" data-toggle="modal" data-target="#transfer-window"><br>-->
-                    <!--<p>1000 &#8381</p>-->
-                <!--</div>-->
-                <!--<div class="content__container__item">-->
-                    <!--<div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img src="img/edit.png"></a></div>-->
-                    <!--<a>Еда</a><br>-->
-                    <!--<img class="item__image" src="img/food.png" data-toggle="modal" data-target="#transfer-window"><br>-->
-                    <!--<p>1000 &#8381</p>-->
-                <!--</div>-->
-                <!--<div class="content__container__item">-->
-                    <!--<div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img src="img/edit.png"></a></div>-->
-                    <!--<a>Еда</a><br>-->
-                    <!--<img class="item__image" src="img/food.png" data-toggle="modal" data-target="#transfer-window"><br>-->
-                    <!--<p>1000 &#8381</p>-->
-                <!--</div>-->
-                <!--<div class="content__container__item">-->
-                    <!--<div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img src="img/edit.png"></a></div>-->
-                    <!--<a>Еда</a><br>-->
-                    <!--<img class="item__image" src="img/food.png" data-toggle="modal" data-target="#transfer-window"><br>-->
-                    <!--<p>1000 &#8381</p>-->
-                <!--</div>-->
                 <div class="content__container__item">
                     <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img src="images/edit.png"></a></div>
                     <a>Еда</a><br>
@@ -290,9 +250,11 @@
                     <img class="item__image" src="images/money.png" data-toggle="modal" data-target="#income-balance-window"><br>
                     <p>10000 &#8381</p>
                 </div>
-                <div class="content__container__item" data-toggle="modal" data-target="#create-income__modal-window">
-                    <h3 class="item__plus">+</h3>
+              <div class="content__container__item" data-toggle="modal" data-target="#create-income__modal-window">
+                <div class="plus__border">
+                  <h2 class="item__plus">+</h2>
                 </div>
+              </div>
             </div>
 
             <div id="content-three" class="content__container">
@@ -379,7 +341,11 @@
                     </div>
                     <p>900 &#8381</p>
                 </div>
-
+                <div class="content__container__item" data-toggle="modal" data-target="#create-dept__modal-window">
+                    <div class="plus__border">
+                      <h2 class="item__plus">+</h2>
+                    </div>
+                </div>
             </div>
         </div>
         <script type="text/javascript" rel="script" src="scripts/tabs.js"></script>
@@ -708,8 +674,8 @@
                                     <label for="yesterday_cat" id="yesterday_label_cat">Вчера</label>
                                 </div>
                                 <div id="other_cont_cat">
-                                    <input type="radio" name="option" id="other_cat" onfocus=" this.select();lacs(this)"
-                                           onclick="event.cancelBubble = true; this.select(); lacs(this)"/>
+                                    <input type="radio" name="option" id="other_cat" onfocus=" this.select();lcs(this)"
+                                           onclick="event.cancelBubble = true; this.select(); lcs(this)"/>
                                     <label for="other_cat" class="radio_btn" id="calendar-dropdown_cat">Другое</label>
                                 </div>
                             </div>

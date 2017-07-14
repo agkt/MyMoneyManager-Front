@@ -88,6 +88,7 @@ document.all?document.attachEvent('onclick',checkClick):document.addEventListene
 
 var updobj;
 function lcs(ielem) {
+    console.log(123);
     updobj=ielem;
     // getObj('fc').style.left=Left(ielem)+'px';
     // getObj('fc').style.top=Top(ielem)+ielem.offsetHeight+'px';
