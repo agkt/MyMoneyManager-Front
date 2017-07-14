@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History main page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="./css/history-main-page.css">
+    <link rel="stylesheet" href="./css/header-main-page.css">
+    <link rel="stylesheet" href="./css/nav_block_style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+<section class="header">
+    <div class="header-wrapper-first">
+        <div class="header-logo">
+            <a href="#">МмМ<img src="./img/logo.png"></a>
+            <a href="#">ttl2.yadgar13@gmail.com<img src="./img/user-icon.png"></a>
+        </div>
+    </div>
+    <div class="header-wrapper-second">
+        <div class="header-content">
+            <div class="header-numbers">
+                <div class="balance">
+                    <h1>32000 Р</h1><br>
+                    <h3>Общий баланс</h3>
+                </div>
+                <div class="costs">
+                    <h2>2345 Р</h2>
+                    <h3>Расходы за сегодня</h3>
+                </div>
+            </div>
+
+            <div class="goals-container">
+                <div class="goals-item" data-toggle="modal" data-target="#goals-modal-window">
+                    <img class="goals-picture" src="img/goal-first.png">
+                    <div class="bg">
+                        <span>Название</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="wallet-flex-container" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+                <div class="flex-wallet" data-toggle="modal" data-target="#wallet-modal-window">
+                    <img src="./img/wallet.png">
+                    <p>Кошелёк</p>
+                    <p>1000 Р</p>
+                </div>
+                <div class="flex-wallet" data-toggle="modal" data-target="#wallet-modal-window">
+                    <img src="./img/card.png">
+                    <p>Рокетбанк</p>
+                    <p>1000 Р</p>
+                </div>
+                <div class="flex-wallet" data-toggle="modal" data-target="#wallet-modal-window">
+                    <img src="./img/wallet.png">
+                    <p>Кошелёк</p>
+                    <p>1000 Р</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="nav_block">
+    <div class="menu">
+        <ul class="menu__tabs">
+            <li class="tab">
+                <a href="#content-one" id="one-tab" class="active-tab">Расходы</a>
+                <p>Июль 2017</p>
+                <p class="sum">-2183 &#8381</p>
+            </li>
+            <li class="tab">
+                <a href="#content-two" id="two-tab" class="tab">Доходы</a>
+                <p>Июль 2017</p>
+                <p class="sum">25000 &#8381</p>
+            </li>
+            <li class="tab">
+                <a href="#content-three" id="three-tab" class="tab">Переводы</a>
+            </li>
+            <li class="tab">
+                <a href="#content-fourth" id="fourth-tab" class="tab">Долги</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div id="content-one" class="content__container">
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Еда</a><br>
+                <img class="item__image" src="img/food.png"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item" data-toggle="modal" data-target="#edit-category__modal-window">
+                <h3 class="item__plus">+</h3>
+            </div>
+        </div>
+
+        <div id="content-two" class="content__container">
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Зарплата</a><br>
+                <img class="item__image" src="img/money.png"><br>
+                <p>15000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Подработка</a><br>
+                <img class="item__image" src="img/money.png"><br>
+                <p>10000 &#8381</p>
+            </div>
+            <div class="content__container__item" data-toggle="modal" data-target="#edit-category__modal-window">
+                <h3 class="item__plus">+</h3>
+            </div>
+        </div>
+
+        <div id="content-three" class="content__container">
+            <form class="content__container__form">
+
+                <table>
+                    <tr class="form__labels">
+                        <td>Откуда</td>
+                        <td></td>
+                        <td>Сумма перевода</td>
+                        <td></td>
+                        <td>Куда</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="content__container__form__select" id="select_out">
+                                <option>Не выбрано</option>
+                                <option>Сбербанк</option>
+                                <option>Наличные</option>
+                            </select>
+                        </td>
+                        <td class="form__hr">→</td>
+                        <td><input type="text" class="form__input_text"></td>
+                        <td class="form__hr">→</td>
+                        <td>
+                            <select class="content__container__form__select" id="select_in">
+                                <option>Не выбрано</option>
+                                <option>Сбербанк</option>
+                                <option>Наличные</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+                <input type="submit" value="Перевести" class="form__input_submit">
+            </form>
+        </div>
+
+        <div id="content-fourth" class="content__container">
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Вася</a><br>
+                <img class="item__image" src="img/need.jpg"><br>
+                <p>1500 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Петя</a><br>
+                <img class="item__image" src="img/need.jpg"><br>
+                <p>300 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Коля</a><br>
+                <img class="item__image" src="img/need.jpg"><br>
+                <p>750 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Кирилл</a><br>
+                <img class="item__image" src="img/need.jpg"><br>
+                <p>1000 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Вадим</a><br>
+                <img class="item__image" src="img/need.jpg"><br>
+                <p>250 &#8381</p>
+            </div>
+            <div class="content__container__item">
+                <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
+                        src="img/edit.png"></a></div>
+                <a>Руслан</a><br>
+                <img class="item__image" src="img/need.jpg"><br>
+                <p>100 &#8381</p>
+            </div>
+            <div class="content__container__item" data-toggle="modal" data-target="#edit-category__modal-window">
+                <h3 class="item__plus">+</h3>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" rel="script" src="js/tabs.js"></script>
+
+    <section class="history">
+        <h4>Сегодня</h4>
+        <div class="history-flex-container">
+            <div class="history-flex-item">
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small></small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small>Зачем я это купил</small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small>Зачем я это купил</small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small></small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small>Зачем я это купил</small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small></small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="history">
+        <h4>Вчера</h4>
+        <div class="history-flex-container">
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small>Зачем я это купил</small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small>Зачем я это купил</small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small></small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small>Зачем я это купил</small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small></small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small>Зачем я это купил</small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small>Зачем я это купил</small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+            <div class="history-flex-item">
+                <div>
+                    <img src="img/history.png">
+                </div>
+                <div>
+                    <strong>Покупки</strong><br>
+                    <small>Зачем я это купил</small>
+                </div>
+                <div>
+                    <small>Кошелёк</small>
+                    <br>
+                    <strong>-599 Р</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<div class="container">
+    <div class="modal fade" id="wallet-modal-window" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Кошелёк</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="name" class="col-xs-4 control-label">Название:</label>
+                            <div class="col-xs-8">
+                                <input type="email" class="form-control" id="name" placeholder="Введите название">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sum" class="col-xs-4 control-label">Сумма:</label>
+                            <div class="col-xs-8">
+                                <input type="text" class="form-control" id="sum" placeholder="Введите сумму">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-offset-2 col-xs-10">
+                                <input type="submit" class="btn btn-default" value="Удалить">
+                                <input type="submit" class="btn btn-default" value="Сохранить">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="modal fade" id="goals-modal-window" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputFile">File input</label>
+                            <input type="file" id="exampleInputFile">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Название цели</label>
+                            <input type="email" class="form-control" id="email" placeholder="Машина">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Необходимая сумма</label>
+                            <input type="email" class="form-control" id="email" placeholder="1 800 000 Р">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Собрано</label>
+                            <input type="email" class="form-control" id="email" placeholder="800 000 Р">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
