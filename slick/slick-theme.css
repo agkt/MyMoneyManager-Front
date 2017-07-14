@@ -6,8 +6,9 @@
 }
 
 /* Icons */
-
-
+.slick-next {
+    background: url("../img/right-arrow-icon.png") no-repeat;;
+}
 /* Arrows */
 .slick-prev,
 .slick-next
@@ -60,11 +61,12 @@
 .slick-next:before
 {
     font-family: 'slick';
+    font-weight: bold;
     font-size: 20px;
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: #333333;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -81,11 +83,11 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '<';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '>';
 }
 
 .slick-next
@@ -99,11 +101,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '>';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '<';
 }
 
 /* Dots */
