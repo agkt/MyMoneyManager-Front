@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="406dc2be-0d19-4bdf-8828-9366b9c6ba5e" name="Default" comment="add files">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/calendar.js" afterPath="" />
+    <list default="true" id="406dc2be-0d19-4bdf-8828-9366b9c6ba5e" name="Default" comment="fix calendar, add design to popup-windows">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/bag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/camera.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/cart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/food-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/grantma.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/mobile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/rub.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/sh_arrow_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/sh_arrow_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/shape.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/suitcase.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/nav_block_style.scss" afterPath="$PROJECT_DIR$/app/styles/nav_block_style.scss" />
     </list>
     <ignored path="MyMoneyManager-Front.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="581" column="70" selection-start-line="581" selection-start-column="70" selection-end-line="581" selection-end-column="93" />
+            <state relative-caret-position="320">
+              <caret line="584" column="65" selection-start-line="584" selection-start-column="65" selection-end-line="584" selection-end-column="65" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -49,10 +57,10 @@
                 <element signature="n#div#10;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#12;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1500069771000" expanded="false" signature="936:2505" ph="..." />
-                <marker date="1500069771000" expanded="false" signature="10091:11266" ph="..." />
-                <marker date="1500069771000" expanded="false" signature="14093:16027" ph="..." />
-                <marker date="1500069771000" expanded="false" signature="16055:18562" ph="..." />
+                <marker date="1500070039000" expanded="false" signature="936:2505" ph="..." />
+                <marker date="1500070039000" expanded="false" signature="10091:11266" ph="..." />
+                <marker date="1500070039000" expanded="false" signature="14093:16027" ph="..." />
+                <marker date="1500070039000" expanded="false" signature="16055:18562" ph="..." />
               </folding>
             </state>
           </provider>
@@ -240,9 +248,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="FullScreen" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -297,10 +305,18 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="fix calendar, add design to popup-windows">
+      <created>1500069959472</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1500069959472</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17575000" />
+    <option name="totallyTimeSpent" value="18710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -324,6 +340,24 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -331,6 +365,10 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix calendar, add design to popup-windows" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix calendar, add design to popup-windows" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -426,8 +464,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="581" column="70" selection-start-line="581" selection-start-column="70" selection-end-line="581" selection-end-column="93" />
+        <state relative-caret-position="320">
+          <caret line="584" column="65" selection-start-line="584" selection-start-column="65" selection-end-line="584" selection-end-column="65" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -446,10 +484,10 @@
             <element signature="n#div#10;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#12;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1500069771000" expanded="false" signature="936:2505" ph="..." />
-            <marker date="1500069771000" expanded="false" signature="10091:11266" ph="..." />
-            <marker date="1500069771000" expanded="false" signature="14093:16027" ph="..." />
-            <marker date="1500069771000" expanded="false" signature="16055:18562" ph="..." />
+            <marker date="1500070039000" expanded="false" signature="936:2505" ph="..." />
+            <marker date="1500070039000" expanded="false" signature="10091:11266" ph="..." />
+            <marker date="1500070039000" expanded="false" signature="14093:16027" ph="..." />
+            <marker date="1500070039000" expanded="false" signature="16055:18562" ph="..." />
           </folding>
         </state>
       </provider>
