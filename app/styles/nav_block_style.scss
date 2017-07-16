@@ -61,6 +61,15 @@ li {
   height: 50px;
 }
 
+.modal__new_name_cat {
+
+}
+
+.modal__name_cat--bg {
+  width: 350px;
+  height: 50px;
+}
+
 .modal-sm {
   width: 400px;
 }
@@ -137,7 +146,7 @@ li {
 
 .content {
     display: inline-block;
-    width: 73%;
+    width: 74%;
     min-height: 238px;
     float: right;
     border-radius: 2px;
@@ -173,6 +182,11 @@ li {
 .content__container__item p {
     margin-top: -3px;
     color: #666;
+}
+
+.dept-item__open-modal {
+  width: 110px;
+  height: 100px;
 }
 
 .item__image {
@@ -212,12 +226,23 @@ li {
     font-weight: bolder;
     padding-left: 5px;
     padding-right: 5px;
-    //padding-top: 7px;
 }
 
-//#select_in {
-//  margin-top: -10px;
-//}
+#edit-category__modal-window .transfer_save input:first-child,
+#edit-income__modal-window .transfer_save input:first-child,
+#edit-dept__modal-window .transfer_save input:first-child,
+#edit-own-dept__modal-window .transfer_save input:first-child,
+#create-dept__modal-window .transfer_save input:first-child {
+  background: #e4e4e4;
+}
+
+#edit-category__modal-window .transfer_save input:last-child,
+#edit-income__modal-window .transfer_save input:last-child,
+#edit-dept__modal-window .transfer_save input:last-child,
+#edit-own-dept__modal-window .transfer_save input:last-child,
+#create-dept__modal-window .transfer_save input:last-child {
+  margin-top: 10px;
+}
 
 .content__container__form__select {
     width: 240px;
@@ -338,10 +363,6 @@ li {
     border: solid 2px #dbe4eb;
 }
 
-.cur_btns {
-
-}
-
 .cur_btns button {
     outline: 0 !important;
 }
@@ -400,8 +421,8 @@ li {
   font-size: 20px;
 }
 
-.save_new {
-    margin-left: 126px;
+.btn_margin {
+    margin-top: 15px;
 }
 
 .transfer_save {
@@ -423,18 +444,15 @@ li {
   }
 }
 
-.save_repay {
-    margin-left: 136px;
-}
-
 .dept-tab {
-    background: #e0e0e0;
+    background: #eee;
     padding: 10px;
 }
 
 .active-dept-tab {
-    background: #44bcf2;
-    padding: 10px;
+    background: #ffffff;
+    border: solid 2px #eee;
+    padding-top: 8px;
 }
 
 .dept-content {
@@ -444,6 +462,7 @@ li {
 .d_tab {
     list-style-type: none;
     display: block;
+    padding-top: 14px;
 }
 
 .dept__tabs {
@@ -462,6 +481,7 @@ li {
 
 .change_dept {
     display: inline-block;
+    margin-bottom: 30px;
 }
 
 .dropdown-toggle {
@@ -477,7 +497,6 @@ li {
 }
 
 .graph__pie {
-    /*background: #e0e0e0;*/
     width: 50%;
     height: 300px;
     margin-right: 10px;
@@ -612,4 +631,16 @@ input::-webkit-inner-spin-button {
     left: 135px;
     top: 40px;
     width: 140px;
+}
+
+.d_tab a {
+  width: 170px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.dept__tabs {
+  justify-content: space-between;
+  width: 350px;
 }

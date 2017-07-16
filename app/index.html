@@ -226,14 +226,14 @@
         <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-income__modal-window"><img
           src="images/edit.png"></a></div>
         <a>Зарплата</a><br>
-        <img class="item__image" src="images/camera.png" data-toggle="modal" data-target="#income-balance-window"><br>
+        <img class="item__image" src="images/suitcase.png" data-toggle="modal" data-target="#income-balance-window"><br>
         <p>15000 &#8381</p>
       </div>
       <div class="content__container__item">
         <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-income__modal-window"><img
           src="images/edit.png"></a></div>
         <a>Подработка</a><br>
-        <img class="item__image" src="images/money.png" data-toggle="modal" data-target="#income-balance-window"><br>
+        <img class="item__image" src="images/camera.png" data-toggle="modal" data-target="#income-balance-window"><br>
         <p>10000 &#8381</p>
       </div>
       <div class="content__container__item" data-toggle="modal" data-target="#create-income__modal-window">
@@ -282,11 +282,11 @@
       <div class="content__container__item">
         <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-dept__modal-window"><img
           src="images/edit.png"></a></div>
-        <p>Мне должен</p>
-        <div class="overflow_text">
-          <a data-toggle="modal" data-target="#repay-own-dept__modal-window">Вася</a><br>
-        </div>
-        <p>1500 &#8381</p>
+          <p>Мне должен</p>
+          <div class="overflow_text">
+            <a data-toggle="modal" data-target="#repay-dept__modal-window">Вася</a><br>
+          </div>
+          <p>1500 &#8381</p>
       </div>
       <div class="content__container__item">
         <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-own-dept__modal-window"><img
@@ -302,7 +302,7 @@
           src="images/edit.png"></a></div>
         <p>Мне должен</p>
         <div class="overflow_text">
-          <a data-toggle="modal" data-target="#repay-own-dept__modal-window">Елена Александровна</a><br>
+          <a data-toggle="modal" data-target="#repay-dept__modal-window">Елена Александровна</a><br>
         </div>
         <p>100 &#8381</p>
       </div>
@@ -574,13 +574,13 @@
             <div class="form-group">
               <table>
                 <tr>
-                  <td><label for="name">Название</label></td>
+                  <td><label for="edit-cat__name">Название</label></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="form-control modal__name_cat" id="name"></td>
-                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol" id="dropdown" data-toggle="dropdown">
-                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="dropdown">
+                  <td><input type="text" class="form-control modal__name_cat" id="edit-cat__name"></td>
+                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol" id="edit-cat__dropdown" data-toggle="dropdown">
+                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="edit-cat__dropdown">
                       <div class="dropdown-menu-container">
                         <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
                         <div role="presentation" class="dropdown-menu-item"><img src="images/suitcase.png" href="#"></div>
@@ -607,9 +607,9 @@
               </table>
             </div>
             <div class="form-group">
-              <div class="col-xs-offset-2 col-xs-14">
-                <input type="submit" class="btn btn-default edit_cat__cur_btn" value="Удалить">
-                <input type="submit" class="btn btn-default" value="Сохранить">
+              <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ"><br>
+                <input type="submit" class="btn btn-default" value="СОХРАНИТЬ">
               </div>
             </div>
           </form>
@@ -703,36 +703,49 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button type="button" class="close" data-dismiss="modal">╳</button>
           <h4 class="modal-title">Создание категории</h4>
-          <img src="images/food.png" class="dropdown-toggle cur_btn" id="dropdown_create_category" data-toggle="dropdown">
-          <div class="dropdown-menu change_icon" role="menu" aria-labelledby="dropdown_create_category">
-            <div class="dropdown-menu-container">
-              <div role="presentation" class="dropdown-menu-item"><img src="images/food.png" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/need.jpg" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/need.jpg" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/need.jpg" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/money.png" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/money.png" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/money.png" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/food.png" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/food.png" href="#"></div>
-            </div>
-          </div>
         </div>
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="name_new_category">Название</label>
-              <input type="text" class="form-control" id="name_new_category">
+              <table>
+                <tr>
+                  <td><label for="create-cat__name">Название</label></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control modal__name_cat" id="create-cat__name"></td>
+                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol" id="create-cat__dropdown" data-toggle="dropdown">
+                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="create-cat__dropdown">
+                      <div class="dropdown-menu-container">
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/food-icon.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                      </div>
+                      <script>
+                        //                        var item = document.getElementsByClassName('dropdown-menu-item');
+                        //                        function calcMargin() {
+                        //                          for (var i = 0; i < item.length; i++){
+                        //                            i.style.marginTop = i.height*0.5 + 'px';
+                        //                            console.log("run method with " + item)
+                        //                          }
+                        //                        }
+                      </script>
+                    </div>
+                  </td>
+                </tr>
+              </table>
             </div>
             <div class="form-group">
-              <label for="sum_new_category">Сумма</label>
-              <input type="text" class="form-control" id="sum_new_category">
-            </div>
-            <div class="form-group">
-              <div class="col-xs-offset-2 col-xs-14">
-                <input type="submit" class="btn btn-default save_new" value="Сохранить">
+              <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                <input type="submit" class="btn btn-default save_new" value="СОХРАНИТЬ">
               </div>
             </div>
           </form>
@@ -747,22 +760,45 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Изменение дохода Название</h4>
-          <img src="images/food.png" class="dropdown-toggle cur_btn" id="dropdown-icons" data-toggle="dropdown">
-          <div class="dropdown-menu change_icon" role="menu" aria-labelledby="dropdown-icons">
-            <div class="dropdown-menu-container">
-              <div role="presentation" class="dropdown-menu-item"><img src="images/food.png" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/need.jpg" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/money.png" href="#"></div>
-            </div>
-          </div>
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <h4 class="modal-title">Изменение дохода</h4>
         </div>
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="name_income">Название</label>
-              <input type="text" class="form-control" id="name_income">
+              <table>
+                <tr>
+                  <td><label for="edit-income__name">Название</label></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control modal__name_cat" id="edit-income__name"></td>
+                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol" id="dropdown" data-toggle="dropdown">
+                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="dropdown">
+                      <div class="dropdown-menu-container">
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/food-icon.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                      </div>
+                      <script>
+                        //                        var item = document.getElementsByClassName('dropdown-menu-item');
+                        //                        function calcMargin() {
+                        //                          for (var i = 0; i < item.length; i++){
+                        //                            i.style.marginTop = i.height*0.5 + 'px';
+                        //                            console.log("run method with " + item)
+                        //                          }
+                        //                        }
+                      </script>
+                    </div>
+                  </td>
+                </tr>
+              </table>
             </div>
             <div class="form-group">
               <label for="select_purse_income">Счёт</label>
@@ -773,9 +809,9 @@
               </select>
             </div>
             <div class="form-group">
-              <div class="col-xs-offset-2 col-xs-14">
-                <input type="submit" class="btn btn-default edit_cat__cur_btn" value="Удалить">
-                <input type="submit" class="btn btn-default" value="Сохранить">
+              <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                <input type="submit" class="btn btn-default" value="СОХРАНИТЬ">
               </div>
             </div>
           </form>
@@ -790,7 +826,7 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button type="button" class="close" data-dismiss="modal">╳</button>
           <h4 class="modal-title">Название дохода</h4>
         </div>
         <div class="modal-body">
@@ -804,8 +840,8 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="income-balance-sum">Сумма</label>
-              <input type="text" class="form-control" id="income-balance-sum">
+              <label for="edit-income-balance__sum">Сумма</label>
+              <input type="text" class="form-control modal__name_cat--bg" id="edit-income-balance__sum">
             </div>
 
             <div class="btn-group col-xs-14 cur_btns radios-as-buttons">
@@ -823,7 +859,7 @@
             </div>
             <div class="form-group">
               <div class="col-xs-offset-2 transfer_save">
-                <input type="submit" class="btn btn-default" value="СОХРАНИТЬ">
+                <input type="submit" class="btn btn-default btn_margin" value="СОХРАНИТЬ">
               </div>
             </div>
             <script>
@@ -864,32 +900,49 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button type="button" class="close" data-dismiss="modal">╳</button>
           <h4 class="modal-title">Создание дохода</h4>
-          <img src="images/food.png" class="dropdown-toggle cur_btn" id="dropdown_create_income" data-toggle="dropdown">
-          <div class="dropdown-menu change_icon" role="menu" aria-labelledby="dropdown_create_income">
-            <div class="dropdown-menu-container">
-              <div role="presentation" class="dropdown-menu-item"><img src="images/food.png" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/need.jpg" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/need.jpg" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/need.jpg" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/money.png" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/money.png" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/money.png" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/food.png" href="#"></div>
-              <div role="presentation" class="dropdown-menu-item"><img src="images/food.png" href="#"></div>
-            </div>
-          </div>
         </div>
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="name_new_income">Название</label>
-              <input type="text" class="form-control" id="name_new_income" placeholder="Введите название">
+              <table>
+                <tr>
+                  <td><label for="new-income__name">Название</label></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control modal__name_cat" id="new-income__name"></td>
+                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol" id="new-income__dropdown" data-toggle="dropdown">
+                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="new-income__dropdown">
+                      <div class="dropdown-menu-container">
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/food-icon.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                      </div>
+                      <script>
+                        //                        var item = document.getElementsByClassName('dropdown-menu-item');
+                        //                        function calcMargin() {
+                        //                          for (var i = 0; i < item.length; i++){
+                        //                            i.style.marginTop = i.height*0.5 + 'px';
+                        //                            console.log("run method with " + item)
+                        //                          }
+                        //                        }
+                      </script>
+                    </div>
+                  </td>
+                </tr>
+              </table>
             </div>
             <div class="form-group">
-              <div class="col-xs-offset-2 col-xs-14">
-                <input type="submit" class="btn btn-default save_new" value="Сохранить">
+              <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="СОХРАНИТЬ">
               </div>
             </div>
           </form>
@@ -904,18 +957,18 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Изменение долга</h4>
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <h4 class="modal-title">Новый долг</h4>
         </div>
         <div class="modal-body">
           <form>
             <div class="change_dept">
               <ul class="dept__tabs">
                 <li class="d_tab">
-                  <a href="#dept-content-one" id="one-dept-tab" class="active-dept-tab">Я должен</a>
+                  <a href="#dept-content-one" id="one-dept-tab" class="active-dept-tab dept_tab__label">Я должен</a>
                 </li>
                 <li class="d_tab">
-                  <a href="#dept-content-two" id="two-dept-tab" class="dept-tab">Мне должны</a>
+                  <a href="#dept-content-two" id="two-dept-tab" class="dept-tab dept_tab__label">Мне должны</a>
                 </li>
               </ul>
             </div>
@@ -924,11 +977,11 @@
                 <form>
                   <div class="form-group">
                     <label for="cr-name_lendor">Кому я должен</label>
-                    <input type="text" class="form-control" id="cr-name_lendor">
+                    <input type="text" class="form-control modal__name_cat--bg" id="cr-name_lendor">
                   </div>
                   <div class="form-group">
                     <label for="cr-sum_lendor">Сумма</label>
-                    <input type="text" class="form-control" id="cr-sum_lendor">
+                    <input type="text" class="form-control modal__name_cat--bg" id="cr-sum_lendor">
                   </div>
                   <div class="form-group">
                     <label for="select_purse_lendor">Положить на счёт</label>
@@ -939,10 +992,9 @@
                     </select>
                   </div>
                   <div class="form-group">
-
-                    <div class="col-xs-offset-2 col-xs-14">
-                      <input type="submit" class="btn btn-default edit_cat__cur_btn" value="Удалить">
-                      <input type="submit" class="btn btn-default" value="Сохранить">
+                    <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                      <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                      <input type="submit" class="btn btn-default" value="СОХРАНИТЬ">
                     </div>
                   </div>
                 </form>
@@ -951,11 +1003,11 @@
                 <form>
                   <div class="form-group">
                     <label for="cr-name_deptor">Должник</label>
-                    <input type="text" class="form-control" id="cr-name_deptor">
+                    <input type="text" class="form-control modal__name_cat--bg" id="cr-name_deptor">
                   </div>
                   <div class="form-group">
                     <label for="cr-sum_deptor">Сумма</label>
-                    <input type="text" class="form-control" id="cr-sum_deptor">
+                    <input type="text" class="form-control modal__name_cat--bg" id="cr-sum_deptor">
                   </div>
                   <div class="form-group">
                     <label for="select_purse_deptor">Снять со счёта</label>
@@ -966,9 +1018,9 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <div class="col-xs-offset-2 col-xs-14">
-                      <input type="submit" class="btn btn-default edit_cat__cur_btn" value="Удалить">
-                      <input type="submit" class="btn btn-default" value="Сохранить">
+                    <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                      <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                      <input type="submit" class="btn btn-default" value="СОХРАНИТЬ">
                     </div>
                   </div>
                 </form>
@@ -987,18 +1039,18 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button type="button" class="close" data-dismiss="modal">╳</button>
           <h4 class="modal-title">Изменение долга</h4>
         </div>
         <div class="modal-body">
           <form>
             <div class="form-group">
               <label for="name_deptor">Должник</label>
-              <input type="text" class="form-control" id="name_deptor">
+              <input type="text" class="form-control modal__name_cat--bg" id="name_deptor">
             </div>
             <div class="form-group">
               <label for="sum_deptor">Сумма</label>
-              <input type="text" class="form-control" id="sum_deptor">
+              <input type="text" class="form-control modal__name_cat--bg" id="sum_deptor">
             </div>
             <div class="form-group">
               <label for="select_purse_dept">Снять со счёта</label>
@@ -1009,9 +1061,9 @@
               </select>
             </div>
             <div class="form-group">
-              <div class="col-xs-offset-2 col-xs-14">
-                <input type="submit" class="btn btn-default edit_cat__cur_btn" value="Удалить">
-                <input type="submit" class="btn btn-default" value="Сохранить">
+              <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                <input type="submit" class="btn btn-default" value="СОХРАНИТЬ">
               </div>
             </div>
           </form>
@@ -1026,18 +1078,18 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button type="button" class="close" data-dismiss="modal">╳</button>
           <h4 class="modal-title">Изменение долга</h4>
         </div>
         <div class="modal-body">
           <form>
             <div class="form-group">
               <label for="name_lendor">Кому я должен</label>
-              <input type="text" class="form-control" id="name_lendor">
+              <input type="text" class="form-control modal__name_cat--bg" id="name_lendor">
             </div>
             <div class="form-group">
               <label for="sum_lendor">Сумма</label>
-              <input type="text" class="form-control" id="sum_lendor">
+              <input type="text" class="form-control modal__name_cat--bg" id="sum_lendor">
             </div>
             <div class="form-group">
               <label for="select_purse_lend">Положить на счёт</label>
@@ -1048,9 +1100,9 @@
               </select>
             </div>
             <div class="form-group">
-              <div class="col-xs-offset-2 col-xs-14">
-                <input type="submit" class="btn btn-default edit_cat__cur_btn" value="Удалить">
-                <input type="submit" class="btn btn-default" value="Сохранить">
+              <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                <input type="submit" class="btn btn-default" value="СОХРАНИТЬ">
               </div>
             </div>
           </form>
@@ -1065,7 +1117,7 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button type="button" class="close" data-dismiss="modal">╳</button>
           <h4 class="modal-title">Долг</h4>
         </div>
         <div class="modal-body">
@@ -1079,8 +1131,8 @@
               </select>
             </div>
             <div class="form-group">
-              <div class="col-xs-offset-2 col-xs-14">
-                <input type="submit" class="btn btn-default save_repay" value="Погасить">
+              <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="Погасить">
               </div>
             </div>
           </form>
@@ -1095,7 +1147,7 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button type="button" class="close" data-dismiss="modal">╳</button>
           <h4 class="modal-title">Долг</h4>
         </div>
         <div class="modal-body">
@@ -1109,8 +1161,8 @@
               </select>
             </div>
             <div class="form-group">
-              <div class="col-xs-offset-2 col-xs-14">
-                <input type="submit" class="btn btn-default save_repay" value="Погасить">
+              <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="Погасить">
               </div>
             </div>
           </form>
