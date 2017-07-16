@@ -1,0 +1,120 @@
+body {
+  background-color: #f3f5f7;
+}
+
+.history h4 {
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: #333333;
+}
+
+.history {
+  width: 74%;
+  float: right;
+  margin-top: 55px;
+}
+
+.history-flex-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.history-flex-item {
+  height: 75px;
+  width: 32%;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 2px #eff0f0;
+  margin-bottom: 1.5%;
+
+}
+
+.history-flex-item:nth-child(3n) {
+  margin-left: 1.75%;
+}
+
+.history-flex-item:nth-child(3n-1) {
+  margin-left: 1.75%;
+}
+
+.history-flex-item:nth-of-type(1+3n) {
+  margin-left: 0;
+}
+
+.history-flex-item div {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.history-flex-item div:first-child {
+  float: left;
+  margin-left: 14px;
+  margin-top: 20px;
+}
+
+.history-flex-item div:last-child {
+  float: right;
+  margin-right: 10px;
+  margin-top: 22px;
+}
+
+.history-flex-item strong {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: #333333;
+}
+
+.history-flex-container small {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  text-align: left;
+  color: #333333;
+}
+
+.history-flex-container strong:last-child {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  color: #ee364f;
+}
+
+.history-flex-container small:first-child {
+  float: right;
+  font-weight: 600;
+  opacity: 0.5;
+  font-size: 14px;
+  text-align: right;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+
+.history-button {
+  margin: 10px 0;
+  float: right;
+}
+.history-button p{
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+}
+
+.history-button button {
+  text-transform: uppercase;
+  width: 278px;
+  height: 60px;
+  border: 0;
+  padding: 0;
+  background-color: #ee364f;
+}
