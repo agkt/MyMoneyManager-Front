@@ -61,10 +61,6 @@ li {
   height: 50px;
 }
 
-.modal__new_name_cat {
-
-}
-
 .modal__name_cat--bg {
   width: 350px;
   height: 50px;
@@ -102,8 +98,8 @@ li {
 .active-tab {
     background: #ff003a;
     color: #ffffff;
-    padding-right: 20px;
-    width: 100%;
+    padding-right: 15px;
+    width: 98%;
     border-bottom: 0 none;
 }
 
@@ -426,8 +422,9 @@ li {
 }
 
 .transfer_save {
-  margin-left: 0;
-  input {
+    margin-left: 0;
+}
+.transfer_save input {
     width: 350px;
     height: 50px;
     background: #ee364f;
@@ -435,13 +432,12 @@ li {
     border: none;
     border-radius: 0;
     transition: .3s;
-  }
-  input:hover {
+}
+.transfer_save input:hover {
     background: #ee364f;
     color: #ffffff;
     transition: .3s;
     transform: scale(.9);
-  }
 }
 
 .dept-tab {
@@ -572,21 +568,21 @@ li {
 /******************/
 
 .radios-as-buttons {
-  width: 350px;
-  justify-content: space-between;
-  display: flex;
-
-  div {
+    width: 350px;
+    justify-content: space-between;
+    display: flex;
+}
+.radios-as-buttons div {
     float: left;
     display: flex;
-  }
+}
 
-  input {
+.radios-as-buttons input {
     position: absolute;
     left: -9999px;
-  }
+}
 
-  input[type="date"]{
+.radios-as-buttons input[type="date"]{
     padding-left: 10px;
     position: inherit;
     width: 110px;
@@ -599,7 +595,7 @@ li {
     margin: 0;
   }
 
-  label {
+.radios-as-buttons label {
     font-weight: 300;
     text-align: center;
     width: 110px;
@@ -610,11 +606,10 @@ li {
     background-color: #eff0f0;
     border: solid 2px #eff0f0;
     padding-top: 10px;
-  }
+}
 
-  input:checked + label {
+.radios-as-buttons input:checked + label {
     background: white;
-  }
 }
 
 input::-webkit-clear-button {
