@@ -236,7 +236,8 @@ li {
 #edit-income__modal-window .transfer_save input:last-child,
 #edit-dept__modal-window .transfer_save input:last-child,
 #edit-own-dept__modal-window .transfer_save input:last-child,
-#create-dept__modal-window .transfer_save input:last-child {
+#create-dept__modal-window .transfer_save input:last-child
+#wallet__modal-window .transfer_save input:last-child{
   margin-top: 10px;
 }
 
@@ -638,4 +639,8 @@ input::-webkit-inner-spin-button {
 .dept__tabs {
   justify-content: space-between;
   width: 350px;
+}
+#wallet__modal-window .transfer_save input:first-child {
+ background-color: #eff0f0;
+  margin-bottom:10px ;
 }

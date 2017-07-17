@@ -4,3 +4,4 @@ test/bower_components
 .idea/workspace.xml
 node_modules
 bower_components
+.idea

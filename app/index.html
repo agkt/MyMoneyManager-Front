@@ -59,7 +59,7 @@
 
 
       <div class="wallet-flex-container">
-        <div class="flex-wallet" data-toggle="modal" data-target="#wallet-modal-window">
+        <div class="flex-wallet" data-toggle="modal" data-target="#wallet__modal-window">
           <div>
             <img src="./images/wallet.png">
           </div>
@@ -69,7 +69,7 @@
           </div>
 
         </div>
-        <div class="flex-wallet" data-toggle="modal" data-target="#wallet-modal-window">
+        <div class="flex-wallet" data-toggle="modal" data-target="#wallet__modal-window">
           <div>
             <img src="./images/card.png">
           </div>
@@ -79,7 +79,7 @@
           </div>
 
         </div>
-        <div class="flex-wallet" data-toggle="modal" data-target="#wallet-modal-window">
+        <div class="flex-wallet" data-toggle="modal" data-target="#wallet__modal-window">
           <div>
             <img src="./images/card.png">
           </div>
@@ -89,7 +89,8 @@
           </div>
 
         </div>
-        <div class="flex-wallet" data-toggle="modal" data-target="#wallet-modal-window">
+
+        <div class="flex-wallet plus" data-toggle="modal" data-target="#create-wallet__modal-window">
           <div>
             <img src="./images/plus-iсon.png">
           </div>
@@ -568,6 +569,121 @@
     </div>
   </div>
 </section>
+
+<!-- pop up окно создание кошелька-->
+<div class="container">
+  <div class="modal fade" id="create-wallet__modal-window" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <h4 class="modal-title">Изменение дохода</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <table>
+                <tr>
+                  <td><label for="edit-income__name">Название счёта</label></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control modal__name_cat" id="edit-income__name"></td>
+                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol"
+                                                 id="dropdown" data-toggle="dropdown">
+                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="dropdown">
+                      <div class="dropdown-menu-container">
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/suitcase.png" href="#">
+                        </div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/food-icon.png" href="#">
+                        </div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/grantma.png" href="#">
+                        </div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="form-group">
+              <label for="edit-income__name">Баланс</label>
+              <td><input type="text" class="form-control modal__name_cat" id="edit-income__name"></td>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                <input type="submit" class="btn btn-default" value="ДОБАВИТЬ">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- pop up окно редактирования кошелька-->
+<div class="container">
+  <div class="modal fade" id="wallet__modal-window" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <h4 class="modal-title">Изменение дохода</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <table>
+                <tr>
+                  <td><label for="edit-income__name">Название счёта</label></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="form-control modal__name_cat" id="edit-income__name"></td>
+                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol"
+                                                 id="dropdown" data-toggle="dropdown">
+                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="dropdown">
+                      <div class="dropdown-menu-container">
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/suitcase.png" href="#">
+                        </div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/food-icon.png" href="#">
+                        </div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/grantma.png" href="#">
+                        </div>
+                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="form-group">
+              <label for="edit-income__name">Баланс</label>
+              <td><input type="text" class="form-control modal__name_cat" id="edit-income__name"></td>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                <input type="submit" class="btn btn-default" value="СОХРАНИТЬ">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- pop-up окно для изменения категории -->
 <div class="container">
