@@ -4,13 +4,15 @@ body {
 
 .history h4 {
   padding-bottom: 20px;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
   font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 600;
   text-align: left;
   color: #333333;
+  float: left;
+
 }
 
 .history {
@@ -97,12 +99,16 @@ body {
   color: rgba(51, 51, 51, 0.5);
 }
 
-
 .history-button {
   margin: 10px 0;
   float: right;
 }
-.history-button p{
+
+.return-history-button {
+  float: left;
+}
+
+.history-button p {
   font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -117,4 +123,56 @@ body {
   border: 0;
   padding: 0;
   background-color: #ee364f;
+}
+
+.history-page {
+  width: 88%;
+  margin: 0 auto;
+  margin-top: 95px;
+}
+
+.history-page h4 {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  color: #333333;
+  float: left;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.return-history-button p {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+}
+
+.return-history-button button {
+  text-transform: uppercase;
+  width: 250px;
+  height: 60px;
+  border: 0;
+  padding: 0;
+  background-color: #ee364f;
+  margin-bottom: 45px;
+}
+
+.history-page-nav {
+  float: right;
+}
+
+.history-page-nav select {
+  width: 290px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 2px #eeeeee;
+}
+
+.history-page-nav select:nth-child(2n) {
+  margin: 0 10px;
 }
