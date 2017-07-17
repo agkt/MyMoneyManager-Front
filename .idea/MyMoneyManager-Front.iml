@@ -8,6 +8,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
     <orderEntry type="library" name="MyMoneyManager-Front node_modules" level="project" />
+=======
+>>>>>>> 35b6651ecb58841eaf3de96ab207df85e4523c68
   </component>
 </module>

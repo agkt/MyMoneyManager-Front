@@ -1,0 +1,641 @@
+body {
+    background-color: #f3f6f7;
+    font-family: Roboto, sans-serif;
+}
+
+div, section ::before, ::after {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.nav_block {
+    max-width: 1200px;
+    min-width: 650px;
+    margin: 30px auto 0;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#content-two, #content-three, #content-fourth, #dept-content-two {
+    display: none;
+}
+
+.menu {
+    display: inline-block;
+    align-content: space-between;
+    width: 26%;
+}
+
+.tab, .active-tab {
+  margin-bottom: 10px;
+  border-radius: 2px;
+  transition: .3s;
+  height: 60px;
+  cursor: pointer;
+}
+
+.form-group label {
+  //margin-bottom: 15px;
+  line-height: 30px;
+  font-size: 17px;
+  font-weight: 100;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.modal-title {
+  width: 97px;
+  height: 21px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #3c434d;
+  margin-top: 35px;
+  margin-left: 10px;
+}
+
+.modal__name_cat {
+  width: 280px;
+  height: 50px;
+}
+
+.modal__name_cat--bg {
+  width: 350px;
+  height: 50px;
+}
+
+.modal-sm {
+  width: 400px;
+}
+
+.modal-header {
+  border-bottom: none;
+  white-space: nowrap;
+}
+
+.modal-body {
+  padding: 25px;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.tab {
+    line-height: 30px;
+    width: 93%;
+    background: #fff;
+    color: #666;
+}
+
+.simple-tab {
+    width: 90%;
+    height: 60px;
+}
+
+.active-tab {
+    background: #ff003a;
+    color: #ffffff;
+    padding-right: 15px;
+    width: 98%;
+    border-bottom: 0 none;
+}
+
+.menu__tabs p {
+    float: right;
+    width: 70px;
+    margin-top: -41px;
+    font-size: 15px;
+}
+
+.active-tab a {
+    color: #ffffff;
+    padding-top: 22px;
+}
+
+.active-tab p {
+    padding-top: 1%;
+}
+
+.tab a {
+    color: #666;
+    padding-top: 15px;
+}
+
+.tab p {
+    float: right;
+    width: 70px;
+    margin-top: -45px;
+    margin-right: 8px;
+}
+
+.menu__tabs li a {
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.content {
+    display: inline-block;
+    width: 74%;
+    min-height: 238px;
+    float: right;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.content__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 5;
+    margin-top: -5px;
+}
+
+.content__container__item {
+    position: relative;
+    margin: 5px;
+    padding: 18px;
+    width: 130px;
+    height: 130px;
+    background: #ffffff;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.content__container__item a {
+    text-decoration: none;
+    color: #666;
+}
+
+.content__container__item p {
+    margin-top: -3px;
+    color: #666;
+}
+
+.dept-item__open-modal {
+  width: 110px;
+  height: 100px;
+}
+
+.item__image {
+    padding: 17px;
+}
+
+.item__plus {
+  //margin-top: -3px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #e4e4e4;
+}
+
+.plus__border {
+  margin: 24%;
+  height: 50px;
+  width: 50px;
+  border: 3px solid #E4E4E4;
+  border-radius: 50%;
+}
+
+.content__container__form {
+    width: auto;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+#content-three {
+    background-color: #ffffff;
+    margin-top: 0;
+    margin-left: 5px;
+    height: 270px;
+}
+
+.form__hr {
+    color: #333333;
+    font-weight: bolder;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#edit-category__modal-window .transfer_save input:first-child,
+#edit-income__modal-window .transfer_save input:first-child,
+#edit-dept__modal-window .transfer_save input:first-child,
+#edit-own-dept__modal-window .transfer_save input:first-child,
+#create-dept__modal-window .transfer_save input:first-child {
+  background: #e4e4e4;
+}
+
+#edit-category__modal-window .transfer_save input:last-child,
+#edit-income__modal-window .transfer_save input:last-child,
+#edit-dept__modal-window .transfer_save input:last-child,
+#edit-own-dept__modal-window .transfer_save input:last-child,
+#create-dept__modal-window .transfer_save input:last-child {
+  margin-top: 10px;
+}
+
+.content__container__form__select {
+    width: 240px;
+    height: 50px;
+    background: white;
+    border: 1px solid #dbe4eb;
+    border-radius: 5px;
+    outline: none;
+    margin-top: -5px;
+}
+
+.form__input_text {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #dbe4eb;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 0px;
+    //margin-top: 10px;
+}
+
+.form__input_submit {
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    background: #ff003a;
+    color: #ffffff;
+    border-color: transparent;
+    float: right;
+    transition: .3s;
+}
+
+.form__input_submit:hover {
+    transition: .3s;
+    transform: scale(.9);
+}
+
+.form__labels {
+    color: #747474;
+    padding-bottom: 10px;
+}
+
+.content__container__form table {
+    border-spacing: 0 10px;
+    border: none;
+    width: 100%;
+}
+
+.content__container__form table td {
+    border-spacing: 0 10px;
+    border: none;
+    padding: 5px;
+}
+
+.overflow_text {
+  font-size: 17px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.sum {
+    float: right;
+    margin-right: -20px;
+}
+
+.edit_item {
+    background: #ff003a;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    padding-top: 5px;
+    position: absolute;
+    top: -8px;
+    left: 112px;
+    display: none;
+}
+
+.edit_item a {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.content__container__item:hover .edit_item {
+    display: block;
+}
+
+.modal_window__selection_icon {
+    float: right;
+}
+
+.modal__input--sum {
+  width: 310px;
+  height: 50px;
+  border-radius: 3.4px;
+  border: solid 2px #dbe4eb;
+  box-shadow: none;
+}
+
+.rub_sym_label, .modal-main__change-icon--label {
+  height: 49px;
+}
+
+.rub__symbol, .modal-main__change-icon {
+  margin-bottom: -6px;
+  margin-left: 15px;
+}
+
+.cur_select {
+    margin-bottom: 15px;
+    height: 49px;
+    width: 350px;
+    background-color: #ffffff;
+    border: solid 2px #dbe4eb;
+}
+
+.cur_btns button {
+    outline: 0 !important;
+}
+
+.cur_btn {
+    float: right;
+    margin-right: 15px;
+}
+
+.dropdown-menu {
+    background-color: #f2f2f2;
+    height: 200px;
+}
+
+.edit_cat__cur_btn {
+    margin-left: 42px;
+}
+
+.change_icon {
+    top: 10%;
+    left: 96%;
+    height: auto;
+}
+
+.dropdown-menu-container {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  align-content: space-around;
+    justify-content: space-around;
+    width: 400px;
+    height: auto;
+}
+
+.dropdown-menu-item {
+    //margin-top: calc(50% - );
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.debt_p p {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.debt_p p:last-child {
+  margin-top: 27px;
+}
+
+.close {
+  font-size: 20px;
+}
+
+.btn_margin {
+    margin-top: 15px;
+}
+
+.transfer_save {
+    margin-left: 0;
+}
+.transfer_save input {
+    width: 350px;
+    height: 50px;
+    background: #ee364f;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    transition: .3s;
+}
+.transfer_save input:hover {
+    background: #ee364f;
+    color: #ffffff;
+    transition: .3s;
+    transform: scale(.9);
+}
+
+.dept-tab {
+    background: #eee;
+    padding: 10px;
+}
+
+.active-dept-tab {
+    background: #ffffff;
+    border: solid 2px #eee;
+    padding-top: 8px;
+}
+
+.dept-content {
+    display: inline-block;
+}
+
+.d_tab {
+    list-style-type: none;
+    display: block;
+    padding-top: 14px;
+}
+
+.dept__tabs {
+    display: inline-flex;
+}
+
+.dept__tabs a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#one-dept-tab {
+    margin-right: 10px;
+}
+
+.change_dept {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.graphics {
+    max-width: 1100px;
+    min-width: 650px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.graph__pie {
+    width: 50%;
+    height: 300px;
+    margin-right: 10px;
+}
+
+.graph__column {
+    background: #e0e0e0;
+    width: 50%;
+    height: 300px;
+    display: flex;
+}
+
+.graphics__container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    float: right;
+    margin-right: -13px;
+    background-color: white;
+    border-radius: 3px;
+    width: 76%;
+    height: 300px;
+}
+
+/******************/
+
+.slider-content{
+    top: 15%;
+    left: 49%;
+    color: black;
+}
+
+.slider-content a {
+    margin: 0 auto;
+    padding: 7px;
+    color: black;
+    text-decoration: none;
+}
+
+.slider-frame {
+    display: none;
+}
+.slider-frame--active {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-arrow {
+    width: 16px;
+    height: 25px;
+    cursor: pointer;
+}
+.slider-arrow--left {
+    position: absolute;
+    display: inline-flex;
+    top: 5px;
+    left: 10%;
+}
+.slider-arrow--right {
+    position: absolute;
+    display: inline-flex;
+    top: 5px;
+    right: 10%;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/******************/
+
+.radios-as-buttons {
+    width: 350px;
+    justify-content: space-between;
+    display: flex;
+}
+.radios-as-buttons div {
+    float: left;
+    display: flex;
+}
+
+.radios-as-buttons input {
+    position: absolute;
+    left: -9999px;
+}
+
+.radios-as-buttons input[type="date"]{
+    padding-left: 10px;
+    position: inherit;
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #eff0f0;
+    border: solid 2px #eff0f0;
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+.radios-as-buttons label {
+    font-weight: 300;
+    text-align: center;
+    width: 110px;
+    height: 40px;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #eff0f0;
+    border: solid 2px #eff0f0;
+    padding-top: 10px;
+}
+
+.radios-as-buttons input:checked + label {
+    background: white;
+}
+
+input::-webkit-clear-button {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#fc {
+    left: 135px;
+    top: 40px;
+    width: 140px;
+}
+
+.d_tab a {
+  width: 170px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.dept__tabs {
+  justify-content: space-between;
+  width: 350px;
+}
