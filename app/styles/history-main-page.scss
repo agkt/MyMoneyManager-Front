@@ -85,7 +85,6 @@ body {
   font-size: 16px;
   font-weight: 600;
   text-align: right;
-  color: #ee364f;
 }
 
 .history-flex-container small:first-child {
@@ -117,4 +116,20 @@ body {
   border: 0;
   padding: 0;
   background-color: #ee364f;
+}
+
+.costs strong:last-child{
+  color: #ee364f;
+}
+.own-dept strong:last-child{
+  color: #ee364f;
+}
+.dept strong:last-child{
+  color:#4bbf6b;
+}
+.earnings strong:last-child{
+  color:#4bbf6b;
+}
+.transfer strong:last-child {
+  color:#4bbf6b;
 }

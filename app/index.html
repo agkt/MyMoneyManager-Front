@@ -41,7 +41,7 @@
           <h1>32000 Р</h1><br>
           <h3>Общий баланс</h3>
         </div>
-        <div class="costs">
+        <div class="today-costs">
           <h2>2345 Р</h2>
           <h3>Расходы за сегодня</h3>
         </div>
@@ -368,10 +368,12 @@
     </div>
   </div>
   <script type="text/javascript" rel="script" src="scripts/tabs.js"></script>
+
+
   <section class="history">
     <h4>Сегодня</h4>
     <div class="history-flex-container">
-      <div class="history-flex-item">
+      <div class="history-flex-item costs" data-toggle="modal" data-target="#history-costs__modal-window">
         <div>
           <strong>Покупки</strong><br>
           <small>Кошелёк</small>
@@ -382,7 +384,7 @@
           <strong>-600 Р</strong>
         </div>
       </div>
-      <div class="history-flex-item">
+      <div class="history-flex-item costs" data-toggle="modal" data-target="#history-costs__modal-window">
         <div>
           <strong>Путешествия</strong><br>
           <small>Карта Рокетбанк</small>
@@ -393,7 +395,7 @@
           <strong>-24 030 Р</strong>
         </div>
       </div>
-      <div class="history-flex-item">
+      <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
         <div>
           <strong>Основная работа</strong><br>
           <small>Карта Рокетбанк</small>
@@ -404,7 +406,7 @@
           <strong>700 Р</strong>
         </div>
       </div>
-      <div class="history-flex-item">
+      <div class="history-flex-item transfer" data-toggle="modal" data-target="#history-transfer__modal-window">
         <div>
           <strong>Карта Рокетбанк</strong><br>
           <small>Кошелёк</small>
@@ -415,18 +417,18 @@
           <strong>1500 Р</strong>
         </div>
       </div>
-      <div class="history-flex-item">
+      <div class="history-flex-item own-dept" data-toggle="modal" data-target="#history-own-dept__modal-window">
         <div>
-          <strong>Покупки</strong><br>
+          <strong>Жуковец Никита</strong><br>
           <small>Карта Рокетбанк</small>
         </div>
         <div>
-          <small>Расход</small>
+          <small>Долг</small>
           <br>
-          <strong>-599 Р</strong>
+          <strong>-5499 Р</strong>
         </div>
       </div>
-      <div class="history-flex-item">
+      <div class="history-flex-item costs" data-toggle="modal" data-target="#history-costs__modal-window">
         <div>
           <strong>Покупки</strong><br>
           <small>Кошелёк</small>
@@ -441,62 +443,73 @@
 
     <h4>Вчера</h4>
     <div class="history-flex-container">
-      <div class="history-flex-item">
+      <div class="history-flex-item dept" data-toggle="modal" data-target="#history-dept__modal-window">
         <div>
-          <strong>Покупки</strong><br>
-          <small>Карта Рокетбанк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
-      </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Карта Рокетбанк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
-      </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
+          <strong>Алексей Пушков</strong><br>
           <small>Кошелёк</small>
         </div>
         <div>
-          <small>Расход</small>
+          <small>Долг</small>
           <br>
-          <strong>-599 Р</strong>
+          <strong>+5499 Р</strong>
         </div>
       </div>
-      <div class="history-flex-item">
+      <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
         <div>
-          <strong>Покупки</strong><br>
+          <strong>Основная работа</strong><br>
           <small>Карта Рокетбанк</small>
         </div>
         <div>
-          <small>Расход</small>
+          <small>Доход</small>
           <br>
-          <strong>-599 Р</strong>
+          <strong>700 Р</strong>
         </div>
       </div>
-      <div class="history-flex-item">
+      <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
         <div>
-          <strong>Покупки</strong><br>
+          <strong>Основная работа</strong><br>
+          <small>Карта Рокетбанк</small>
+        </div>
+        <div>
+          <small>Доход</small>
+          <br>
+          <strong>700 Р</strong>
+        </div>
+      </div>
+      <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
+        <div>
+          <strong>Основная работа</strong><br>
+          <small>Карта Рокетбанк</small>
+        </div>
+        <div>
+          <small>Доход</small>
+          <br>
+          <strong>700 Р</strong>
+        </div>
+      </div>
+      <div class="history-flex-item own-dept" data-toggle="modal" data-target="#history-own-dept__modal-window">
+        <div>
+          <strong>Жуковец Никита</strong><br>
+          <small>Карта Рокетбанк</small>
+        </div>
+        <div>
+          <small>Долг</small>
+          <br>
+          <strong>-5499 Р</strong>
+        </div>
+      </div>
+      <div class="history-flex-item transfer" data-toggle="modal" data-target="#history-transfer__modal-window">
+        <div>
+          <strong>Карта Рокетбанк</strong><br>
           <small>Кошелёк</small>
         </div>
         <div>
-          <small>Расход</small>
+          <small>Перевод</small>
           <br>
-          <strong>-599 Р</strong>
+          <strong>1500 Р</strong>
         </div>
       </div>
-      <div class="history-flex-item">
+      <div class="history-flex-item costs" data-toggle="modal" data-target="#history-costs__modal-window">
         <div>
           <strong>Покупки</strong><br>
           <small>Карта Рокетбанк</small>
@@ -507,28 +520,18 @@
           <strong>-599 Р</strong>
         </div>
       </div>
-      <div class="history-flex-item">
+      <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
         <div>
-          <strong>Покупки</strong><br>
+          <strong>Подарок на др</strong><br>
           <small>Карта Рокетбанк</small>
         </div>
         <div>
-          <small>Расход</small>
+          <small>Доход</small>
           <br>
-          <strong>-599 Р</strong>
+          <strong>5000 Р</strong>
         </div>
       </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Карта Рокетбанк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
-      </div>
+
     </div>
 
     <div class="history-button">
@@ -577,7 +580,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">╳</button>
-          <h4 class="modal-title">Изменение дохода</h4>
+          <h4 class="modal-title">Новый счёт</h4>
         </div>
         <div class="modal-body">
           <form>
@@ -634,7 +637,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">╳</button>
-          <h4 class="modal-title">Изменение дохода</h4>
+          <h4 class="modal-title">Редактирование счёта</h4>
         </div>
         <div class="modal-body">
           <form>
@@ -1315,6 +1318,261 @@
   </div>
 </div>
 
+<!-- pop up окно для истории расходов-->
+<div class="container">
+  <div class="modal fade" id="history-costs__modal-window" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <h4 class="modal-title">История: расходы</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="income-select_purse">Категория</label>
+              <select id="income-select_purse" class="col-xs-7 cur_select">
+                <option>Покупки</option>
+                <option>Еда</option>
+                <option>Автомобиль</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="select_purse">Счёт</label>
+              <select id="select_purse" class="col-xs-6 cur_select">
+                <option>Не выбрано</option>
+                <option>Кошелек</option>
+                <option>Сбербанк</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <table>
+                <tr>
+                  <td><input type="text" class="form-control modal__input--sum" id="sum_category"
+                             placeholder="Сумма расхода"></td>
+                  <td><label for="sum_category" class="rub_sym_label"><img class="rub__symbol"
+                                                                           src="images/rub.png"></label></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="btn-group col-xs-14 cur_btns radios-as-buttons">
+              <div>
+                <input type="radio" name="option" id="today" class="radio_btn"/>
+                <label for="today" id="today_label" onclick="changeToday()">Сегодня</label>
+              </div>
+              <div>
+                <input type="radio" name="option" id="yesterday" class="radio_btn"/>
+                <label for="yesterday" id="yesterday_label" onclick="changeYesterday()">Вчера</label>
+              </div>
+              <div id="other_cont">
+                <input type="date" name="option" id="other" class="radio-btn" onclick="changeDate()"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-offset-2 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                <input type="submit" class="btn btn-default btn_margin" value="СОХРАНИТЬ">
+              </div>
+            </div>
+            <script>
+              var date_input = document.getElementById('other');
+              var input_today_label = document.getElementById('today_label');
+              var input_yesterday_label = document.getElementById('yesterday_label');
+              function changeDate() {
+                input_today_label.checked = false;
+                input_yesterday_label.checked = false;
+                date_input.style.background = '#ffffff';
+                input_today_label.style.background = '#eff0f0';
+                input_yesterday_label.style.background = '#eff0f0';
+              }
+              function changeToday() {
+                date_input.style.background = '#eff0f0';
+                input_today_label.style.background = '#ffffff';
+                input_yesterday_label.style.background = '#eff0f0';
+                input_today_label.checked = true;
+                input_yesterday_label.checked = false;
+              }
+              function changeYesterday() {
+                date_input.style.background = '#eff0f0';
+                input_today_label.style.background = '#eff0f0';
+                input_yesterday_label.style.background = '#ffffff';
+                input_today_label.checked = false;
+                input_yesterday_label.checked = true;
+              }
+            </script>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- pop up окно для истории доходов-->
+<div class="container">
+  <div class="modal fade" id="history-earnings__modal-window" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <h4 class="modal-title">История: доходы</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="income-select_purse">Категория</label>
+              <select id="income-select_purse" class="col-xs-7 cur_select">
+                <option>Покупки</option>
+                <option>Еда</option>
+                <option>Автомобиль</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="select_purse">Счёт</label>
+              <select id="select_purse" class="col-xs-6 cur_select">
+                <option>Не выбрано</option>
+                <option>Кошелек</option>
+                <option>Сбербанк</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <table>
+                <tr>
+                  <td><input type="text" class="form-control modal__input--sum" id="sum_category"
+                             placeholder="Сумма дохода"></td>
+                  <td><label for="sum_category" class="rub_sym_label"><img class="rub__symbol"
+                                                                           src="images/rub.png"></label></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="btn-group col-xs-14 cur_btns radios-as-buttons">
+              <div>
+                <input type="radio" name="option" id="today" class="radio_btn"/>
+                <label for="today" id="today_label" onclick="changeToday()">Сегодня</label>
+              </div>
+              <div>
+                <input type="radio" name="option" id="yesterday" class="radio_btn"/>
+                <label for="yesterday" id="yesterday_label" onclick="changeYesterday()">Вчера</label>
+              </div>
+              <div id="other_cont">
+                <input type="date" name="option" id="other" class="radio-btn" onclick="changeDate()"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-offset-2 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                <input type="submit" class="btn btn-default btn_margin" value="СОХРАНИТЬ">
+              </div>
+            </div>
+            <script>
+              var date_input = document.getElementById('other');
+              var input_today_label = document.getElementById('today_label');
+              var input_yesterday_label = document.getElementById('yesterday_label');
+              function changeDate() {
+                input_today_label.checked = false;
+                input_yesterday_label.checked = false;
+                date_input.style.background = '#ffffff';
+                input_today_label.style.background = '#eff0f0';
+                input_yesterday_label.style.background = '#eff0f0';
+              }
+              function changeToday() {
+                date_input.style.background = '#eff0f0';
+                input_today_label.style.background = '#ffffff';
+                input_yesterday_label.style.background = '#eff0f0';
+                input_today_label.checked = true;
+                input_yesterday_label.checked = false;
+              }
+              function changeYesterday() {
+                date_input.style.background = '#eff0f0';
+                input_today_label.style.background = '#eff0f0';
+                input_yesterday_label.style.background = '#ffffff';
+                input_today_label.checked = false;
+                input_yesterday_label.checked = true;
+              }
+            </script>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- pop up окно для истории долгов, которые отдали мне-->
+<div class="container">
+  <div class="modal fade" id="history-dept__modal-window" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <h4 class="modal-title">История: долги</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name_lendor">Мне должен</label>
+              <input type="text" class="form-control modal__name_cat--bg" id="name_lendor">
+            </div>
+            <div class="form-group">
+              <table>
+                <tr>
+                  <td><input type="text" class="form-control modal__input--sum" id="sum_category"
+                             placeholder="Сумма долга"></td>
+                  <td><label for="sum_category" class="rub_sym_label"><img class="rub__symbol"
+                                                                           src="images/rub.png"></label></td>
+                </tr>
+              </table>
+            </div>
+            <div class="form-group">
+              <label for="select_purse">Счёт</label>
+              <select id="select_purse" class="col-xs-6 cur_select">
+                <option>Не выбрано</option>
+                <option>Кошелек</option>
+                <option>Сбербанк</option>
+              </select>
+            </div>
+
+
+            <div class="form-group">
+              <div class="col-xs-offset-2 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                <input type="submit" class="btn btn-default btn_margin" value="СОХРАНИТЬ">
+              </div>
+            </div>
+            <script>
+              var date_input = document.getElementById('other');
+              var input_today_label = document.getElementById('today_label');
+              var input_yesterday_label = document.getElementById('yesterday_label');
+              function changeDate() {
+                input_today_label.checked = false;
+                input_yesterday_label.checked = false;
+                date_input.style.background = '#ffffff';
+                input_today_label.style.background = '#eff0f0';
+                input_yesterday_label.style.background = '#eff0f0';
+              }
+              function changeToday() {
+                date_input.style.background = '#eff0f0';
+                input_today_label.style.background = '#ffffff';
+                input_yesterday_label.style.background = '#eff0f0';
+                input_today_label.checked = true;
+                input_yesterday_label.checked = false;
+              }
+              function changeYesterday() {
+                date_input.style.background = '#eff0f0';
+                input_today_label.style.background = '#eff0f0';
+                input_yesterday_label.style.background = '#ffffff';
+                input_today_label.checked = false;
+                input_yesterday_label.checked = true;
+              }
+            </script>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

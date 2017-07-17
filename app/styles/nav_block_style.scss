@@ -640,7 +640,15 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
   width: 350px;
 }
-#wallet__modal-window .transfer_save input:first-child {
+#wallet__modal-window .transfer_save input:first-child,
+#history-costs__modal-window .transfer_save input:first-child,
+#history-earnings__modal-window .transfer_save input:first-child,
+#history-dept__modal-window .transfer_save input:first-child {
  background-color: #eff0f0;
-  margin-bottom:10px ;
+  margin-bottom:10px;
+}
+#history-costs__modal-window .transfer_save input:last-child,
+#history-earnings__modal-window .transfer_save input:last-child,
+#history-dept__modal-window .transfer_save input:last-child {
+  margin-top: 0;
 }
