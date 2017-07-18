@@ -143,10 +143,10 @@ li {
 .content {
     display: inline-block;
     width: 74%;
-    min-height: 238px;
+    min-height: 270px;
     float: right;
     border-radius: 2px;
-    margin-bottom: 10px;
+    //margin-bottom: 10px;
 }
 
 .content__container {
@@ -189,19 +189,9 @@ li {
     padding: 17px;
 }
 
-.item__plus {
-  //margin-top: -3px;
-  font-size: 40px;
-  font-weight: 400;
-  color: #e4e4e4;
-}
-
 .plus__border {
   margin: 24%;
   height: 50px;
-  width: 50px;
-  border: 3px solid #E4E4E4;
-  border-radius: 50%;
 }
 
 .content__container__form {
@@ -370,8 +360,7 @@ li {
 }
 
 .dropdown-menu {
-    background-color: #f2f2f2;
-    height: 200px;
+    height: auto;
 }
 
 .edit_cat__cur_btn {
@@ -388,20 +377,36 @@ li {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
-  align-content: space-around;
+    align-content: space-around;
     justify-content: space-around;
     width: 400px;
     height: auto;
 }
 
 .dropdown-menu-item {
-    //margin-top: calc(50% - );
-    margin-bottom: 15px;
-    background-color: #ffffff;
+    margin-bottom: 7px;
+    margin-top: 7px;
     width: 62px;
     height: 62px;
-    border-radius: 50%;
+    border-radius: 5px;
+    border: solid 2px #f3f5f6;
     cursor: pointer;
+    text-align: center;
+    line-height: 80px;
+}
+
+.empty {
+    border: none;
+}
+
+.dropdown-menu-item img {
+    margin: auto;
+    //margin-top: 15px;
+    //margin-left: 10px;
+}
+
+.td-container input, .td-container img {
+    display: inline-flex;
 }
 
 .debt_p p {
@@ -500,22 +505,23 @@ li {
 }
 
 .graph__column {
-    background: #e0e0e0;
+    margin-top: 12px;
     width: 50%;
     height: 300px;
     display: flex;
 }
 
 .graphics__container {
+    padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
     float: right;
-    margin-right: -13px;
+    margin-right: -43px;
     background-color: white;
     border-radius: 3px;
-    width: 76%;
-    height: 300px;
+    width: 80%;
+    height: auto;
 }
 
 /******************/

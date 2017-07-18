@@ -16,9 +16,9 @@ function drawChart() {
     ]);
 
     var options = {
-        chart: {
-            title: 'Анализ доходов/расходов'
-        },
+        // chart: {
+        //     title: 'Анализ доходов/расходов'
+        // },
         bars: 'vertical',
         vAxis: {format: 'decimal'},
         colors: ['#1b9e77', '#d95f02', '#7570b3']

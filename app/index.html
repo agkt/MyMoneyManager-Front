@@ -100,70 +100,6 @@
   </div>
 </section>
 
-<div class="container">
-  <div class="modal fade" id="wallet-modal-window" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Кошелёк</h4>
-        </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div class="form-group">
-              <label for="name_wal" class="col-xs-4 control-label">Название:</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" id="name_wal" placeholder="Введите название">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="sum_wal" class="col-xs-4 control-label">Сумма:</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" id="sum_wal" placeholder="Введите сумму">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-xs-offset-2 col-xs-10">
-                <input type="submit" class="btn btn-default" value="Удалить">
-                <input type="submit" class="btn btn-default" value="Сохранить">
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="modal fade" id="goals-modal-window" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="exampleInputFile">File input</label>
-              <input type="file" id="exampleInputFile">
-            </div>
-            <div class="form-group">
-              <label for="name_target">Название цели</label>
-              <input type="email" class="form-control" id="name_target" placeholder="Машина">
-            </div>
-            <div class="form-group">
-              <label for="sum_target">Необходимая сумма</label>
-              <input type="email" class="form-control" id="sum_target" placeholder="1 800 000 Р">
-            </div>
-            <div class="form-group">
-              <label for="have_target">Собрано</label>
-              <input type="email" class="form-control" id="have_target" placeholder="800 000 Р">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <section class="nav_block">
   <div class="menu">
     <ul class="menu__tabs">
@@ -243,7 +179,7 @@
       </div>
       <div class="content__container__item" data-toggle="modal" data-target="#create-category__modal-window">
         <div class="plus__border">
-          <h2 class="item__plus">+</h2>
+          <img src="images/plus-iсon.png">
         </div>
       </div>
     </div>
@@ -265,7 +201,7 @@
       </div>
       <div class="content__container__item" data-toggle="modal" data-target="#create-income__modal-window">
         <div class="plus__border">
-          <h2 class="item__plus">+</h2>
+          <img src="images/plus-iсon.png">
         </div>
       </div>
     </div>
@@ -362,7 +298,7 @@
       </div>
       <div class="content__container__item" data-toggle="modal" data-target="#create-dept__modal-window">
         <div class="plus__border">
-          <h2 class="item__plus">+</h2>
+          <img src="images/plus-iсon.png">
         </div>
       </div>
     </div>
@@ -548,10 +484,10 @@
     <div class="graph__pie">
       <section class="slider">
         <div id="arrow-left" class="slider-arrow slider-arrow--left">
-          <img src="images/LeftArrow.png">
+          <img src="images/left-arrow.png">
         </div>
         <div id="arrow-right" class="slider-arrow slider-arrow--right">
-          <img src="images/RightArrow.png">
+          <img src="images/right-arrow.png">
         </div>
         <div class="slider-content">
           <div class="slider-frame">
@@ -587,36 +523,38 @@
             <div class="form-group">
               <table>
                 <tr>
-                  <td><label for="edit-income__name">Название счёта</label></td>
-                  <td></td>
+                  <td><label for="create-wallet__name">Название счёта</label></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="form-control modal__name_cat" id="edit-income__name"></td>
-                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol"
-                                                 id="dropdown" data-toggle="dropdown">
+                  <td class="td-container"><input type="text" class="form-control modal__name_cat" id="create-wallet__name">
+                  <img src="images/cart.png" class="dropdown-toggle rub__symbol" id="create-wallet__dropdown" data-toggle="dropdown">
                     <div class="dropdown-menu change_icon" role="menu" aria-labelledby="dropdown">
                       <div class="dropdown-menu-container">
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/suitcase.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/camera.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/bag.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/food-icon.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/shape.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/mobile.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/grantma.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/wallet.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
                       </div>
                     </div>
+                    <script>
+                      var create_wallet_icon = document.getElementById("create-wallet__dropdown");
+                      function changeIcon(main_img, obj) {
+                        main_img.src = obj.src;
+                      }
+                    </script>
                   </td>
                 </tr>
               </table>
             </div>
             <div class="form-group">
-              <label for="edit-income__name">Баланс</label>
-              <td><input type="text" class="form-control modal__name_cat" id="edit-income__name"></td>
+              <label for="create-wallet__balance">Баланс</label>
+              <input type="text" class="form-control modal__name_cat modal__name_cat--bg" id="create-wallet__balance">
             </div>
             <div class="form-group">
               <div class="col-xs-offset-2 col-xs-14 transfer_save">
@@ -644,36 +582,35 @@
             <div class="form-group">
               <table>
                 <tr>
-                  <td><label for="edit-income__name">Название счёта</label></td>
-                  <td></td>
+                  <td><label for="edit-wallet__name">Название счёта</label></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="form-control modal__name_cat" id="edit-income__name"></td>
-                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol"
-                                                 id="dropdown" data-toggle="dropdown">
-                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="dropdown">
+                  <td class="td-container"><input type="text" class="form-control modal__name_cat" id="edit-wallet__name">
+                  <img src="images/cart.png" class="dropdown-toggle rub__symbol" id="wallet-icon__dropdown" data-toggle="dropdown">
+                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="wallet-icon__dropdown">
                       <div class="dropdown-menu-container">
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/suitcase.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/camera.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/bag.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/food-icon.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/shape.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/mobile.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/grantma.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/wallet.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
                       </div>
                     </div>
+                    <script>
+                      var edit_wallet_icon = document.getElementById("wallet-icon__dropdown");
+                    </script>
                   </td>
                 </tr>
               </table>
             </div>
             <div class="form-group">
-              <label for="edit-income__name">Баланс</label>
-              <td><input type="text" class="form-control modal__name_cat" id="edit-income__name"></td>
+              <label for="edit-wallet__balance">Баланс</label>
+              <td><input type="text" class="form-control modal__name_cat modal__name_cat--bg" id="edit-wallet__balance"></td>
             </div>
             <div class="form-group">
               <div class="col-xs-offset-2 col-xs-14 transfer_save">
@@ -703,35 +640,25 @@
               <table>
                 <tr>
                   <td><label for="edit-cat__name">Название</label></td>
-                  <td></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="form-control modal__name_cat" id="edit-cat__name"></td>
-                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol"
-                                                 id="edit-cat__dropdown" data-toggle="dropdown">
+                  <td class="td-container"><input type="text" class="form-control modal__name_cat" id="edit-cat__name">
+                  <img src="images/cart.png" class="dropdown-toggle rub__symbol" id="edit-cat__dropdown" data-toggle="dropdown">
                     <div class="dropdown-menu change_icon" role="menu" aria-labelledby="edit-cat__dropdown">
                       <div class="dropdown-menu-container">
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/suitcase.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/camera.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/bag.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/food-icon.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/shape.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/mobile.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/grantma.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_category_icon, this)" src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_category_icon, this)" src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_category_icon, this)" src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_category_icon, this)" src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_category_icon, this)" src="images/wallet.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_category_icon, this)" src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_category_icon, this)" src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_category_icon, this)" src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
                       </div>
                       <script>
-                        //                        var item = document.getElementsByClassName('dropdown-menu-item');
-                        //                        function calcMargin() {
-                        //                          for (var i = 0; i < item.length; i++){
-                        //                            i.style.marginTop = i.height*0.5 + 'px';
-                        //                            console.log("run method with " + item)
-                        //                          }
-                        //                        }
+                        var edit_category_icon = document.getElementById("edit-cat__dropdown");
                       </script>
                     </div>
                   </td>
@@ -770,8 +697,8 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="select_purse">Счёт</label>
-              <select id="select_purse" class="col-xs-6 cur_select">
+              <label for="select_purse_transfer">Счёт</label>
+              <select id="select_purse_transfer" class="col-xs-6 cur_select">
                 <option>Не выбрано</option>
                 <option>Кошелек</option>
                 <option>Сбербанк</option>
@@ -780,24 +707,26 @@
             <div class="form-group">
               <table>
                 <tr>
-                  <td><input type="text" class="form-control modal__input--sum" id="sum_category"
-                             placeholder="Сумма расхода"></td>
-                  <td><label for="sum_category" class="rub_sym_label"><img class="rub__symbol"
-                                                                           src="images/rub.png"></label></td>
+                  <td>
+                    <input type="text" class="form-control modal__input--sum" id="transfer_sum" placeholder="Сумма расхода">
+                  </td>
+                  <td>
+                    <label for="transfer_sum" class="rub_sym_label"><img class="rub__symbol" src="images/rub.png"></label>
+                  </td>
                 </tr>
               </table>
             </div>
             <div class="btn-group col-xs-14 cur_btns radios-as-buttons">
               <div>
                 <input type="radio" name="option" id="today_cat" class="radio_btn"/>
-                <label for="today_cat" id="today_label_cat" onclick="enterToday()">Сегодня</label>
+                <label for="today_cat" id="today_label_cat" onclick="changeToday(dc, itc, iyc)">Сегодня</label>
               </div>
               <div>
                 <input type="radio" name="option" id="yesterday_cat" class="radio_btn"/>
-                <label for="yesterday_cat" id="yesterday_label_cat" onclick="enterYesterday()">Вчера</label>
+                <label for="yesterday_cat" id="yesterday_label_cat" onclick="changeYesterday(dc, itc, iyc)">Вчера</label>
               </div>
               <div id="other_cont_cat">
-                <input type="date" name="option" id="other_cat" class="radio-btn" onclick="enterDate()"/>
+                <input type="date" name="option" id="other_cat" class="radio-btn" onclick="changeDate(dc, itc, iyc)"/>
               </div>
             </div>
             <div class="form-group">
@@ -806,23 +735,29 @@
               </div>
             </div>
             <script>
-              var date = document.getElementById('other_cat');
-              var input_today = document.getElementById('today_cat');
-              var input_yesterday = document.getElementById('yesterday_cat');
-              function enterDate() {
-                input_today.checked = false;
-                input_yesterday.checked = false;
+              var dc = document.getElementById('other_cat');
+              var itc = document.getElementById('today_cat');
+              var iyc = document.getElementById('yesterday_cat');
+              function changeDate(date, today, yesterday) {
+                today.checked = false;
+                yesterday.checked = false;
                 date.style.background = '#ffffff';
+                today.style.background = '#eff0f0';
+                yesterday.style.background = '#eff0f0';
               }
-              function enterToday() {
+              function changeToday(date, today, yesterday) {
                 date.style.background = '#eff0f0';
-                input_today.checked = true;
-                input_yesterday.checked = false;
+                today.style.background = '#ffffff';
+                yesterday.style.background = '#eff0f0';
+                today.checked = true;
+                yesterday.checked = false;
               }
-              function enterYesterday() {
+              function changeYesterday(date, today, yesterday) {
                 date.style.background = '#eff0f0';
-                input_today.checked = false;
-                input_yesterday.checked = true;
+                today.style.background = '#eff0f0';
+                yesterday.style.background = '#ffffff';
+                today.checked = false;
+                yesterday.checked = true;
               }
             </script>
           </form>
@@ -846,35 +781,25 @@
               <table>
                 <tr>
                   <td><label for="create-cat__name">Название</label></td>
-                  <td></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="form-control modal__name_cat" id="create-cat__name"></td>
-                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol"
-                                                 id="create-cat__dropdown" data-toggle="dropdown">
+                  <td class="td-container"><input type="text" class="form-control modal__name_cat" id="create-cat__name">
+                  <img src="images/cart.png" class="dropdown-toggle rub__symbol" id="create-cat__dropdown" data-toggle="dropdown">
                     <div class="dropdown-menu change_icon" role="menu" aria-labelledby="create-cat__dropdown">
                       <div class="dropdown-menu-container">
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/suitcase.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/camera.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/bag.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/food-icon.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/shape.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/mobile.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/grantma.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_cat_icon, this)" src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_cat_icon, this)" src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_cat_icon, this)" src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_cat_icon, this)" src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_cat_icon, this)" src="images/wallet.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_cat_icon, this)" src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_cat_icon, this)" src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_cat_icon, this)" src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
                       </div>
                       <script>
-                        //                        var item = document.getElementsByClassName('dropdown-menu-item');
-                        //                        function calcMargin() {
-                        //                          for (var i = 0; i < item.length; i++){
-                        //                            i.style.marginTop = i.height*0.5 + 'px';
-                        //                            console.log("run method with " + item)
-                        //                          }
-                        //                        }
+                        var create_cat_icon = document.getElementById("create-cat__dropdown");
                       </script>
                     </div>
                   </td>
@@ -907,37 +832,27 @@
               <table>
                 <tr>
                   <td><label for="edit-income__name">Название</label></td>
-                  <td></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="form-control modal__name_cat" id="edit-income__name"></td>
-                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol"
-                                                 id="dropdown" data-toggle="dropdown">
-                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="dropdown">
+                  <td class="td-container"><input type="text" class="form-control modal__name_cat" id="edit-income__name">
+                  <img src="images/cart.png" class="dropdown-toggle rub__symbol" id="edit-income__dropdown" data-toggle="dropdown">
+                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="edit-income__dropdown">
                       <div class="dropdown-menu-container">
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/suitcase.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/camera.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/bag.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/food-icon.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/shape.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/mobile.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/grantma.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_income_icon, this)" src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_income_icon, this)" src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_income_icon, this)" src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_income_icon, this)" src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_income_icon, this)" src="images/wallet.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_income_icon, this)" src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_income_icon, this)" src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_income_icon, this)" src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
                       </div>
-                      <script>
-                        //                        var item = document.getElementsByClassName('dropdown-menu-item');
-                        //                        function calcMargin() {
-                        //                          for (var i = 0; i < item.length; i++){
-                        //                            i.style.marginTop = i.height*0.5 + 'px';
-                        //                            console.log("run method with " + item)
-                        //                          }
-                        //                        }
-                      </script>
                     </div>
+                    <script>
+                      var edit_income_icon = document.getElementById("edit-income__dropdown");
+                    </script>
                   </td>
                 </tr>
               </table>
@@ -989,14 +904,14 @@
             <div class="btn-group col-xs-14 cur_btns radios-as-buttons">
               <div>
                 <input type="radio" name="option" id="today" class="radio_btn"/>
-                <label for="today" id="today_label" onclick="changeToday()">Сегодня</label>
+                <label for="today" id="today_label" onclick="changeToday(di, itl, iyl)">Сегодня</label>
               </div>
               <div>
                 <input type="radio" name="option" id="yesterday" class="radio_btn"/>
-                <label for="yesterday" id="yesterday_label" onclick="changeYesterday()">Вчера</label>
+                <label for="yesterday" id="yesterday_label" onclick="changeYesterday(di, itl, iyl)">Вчера</label>
               </div>
               <div id="other_cont">
-                <input type="date" name="option" id="other" class="radio-btn" onclick="changeDate()"/>
+                <input type="date" name="option" id="other" class="radio-btn" onclick="changeDate(di, itl, iyl)"/>
               </div>
             </div>
             <div class="form-group">
@@ -1005,30 +920,9 @@
               </div>
             </div>
             <script>
-              var date_input = document.getElementById('other');
-              var input_today_label = document.getElementById('today_label');
-              var input_yesterday_label = document.getElementById('yesterday_label');
-              function changeDate() {
-                input_today_label.checked = false;
-                input_yesterday_label.checked = false;
-                date_input.style.background = '#ffffff';
-                input_today_label.style.background = '#eff0f0';
-                input_yesterday_label.style.background = '#eff0f0';
-              }
-              function changeToday() {
-                date_input.style.background = '#eff0f0';
-                input_today_label.style.background = '#ffffff';
-                input_yesterday_label.style.background = '#eff0f0';
-                input_today_label.checked = true;
-                input_yesterday_label.checked = false;
-              }
-              function changeYesterday() {
-                date_input.style.background = '#eff0f0';
-                input_today_label.style.background = '#eff0f0';
-                input_yesterday_label.style.background = '#ffffff';
-                input_today_label.checked = false;
-                input_yesterday_label.checked = true;
-              }
+              var di = document.getElementById('other');
+              var itl = document.getElementById('today_label');
+              var iyl = document.getElementById('yesterday_label');
             </script>
           </form>
         </div>
@@ -1051,37 +945,27 @@
               <table>
                 <tr>
                   <td><label for="new-income__name">Название</label></td>
-                  <td></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="form-control modal__name_cat" id="new-income__name"></td>
-                  <td class="rub_sym_label"><img src="images/cart.png" class="dropdown-toggle cur_btn rub__symbol"
-                                                 id="new-income__dropdown" data-toggle="dropdown">
+                  <td class="td-container"><input type="text" class="form-control modal__name_cat" id="new-income__name">
+                  <img src="images/cart.png" class="dropdown-toggle rub__symbol" id="new-income__dropdown" data-toggle="dropdown">
                     <div class="dropdown-menu change_icon" role="menu" aria-labelledby="new-income__dropdown">
                       <div class="dropdown-menu-container">
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/suitcase.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/camera.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/bag.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/food-icon.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/shape.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/mobile.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/grantma.png" href="#">
-                        </div>
-                        <div role="presentation" class="dropdown-menu-item"><img src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_income_icon, this)" src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_income_icon, this)" src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_income_icon, this)" src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_income_icon, this)" src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_income_icon, this)" src="images/wallet.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_income_icon, this)" src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_income_icon, this)" src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_income_icon, this)" src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
                       </div>
-                      <script>
-                        //                        var item = document.getElementsByClassName('dropdown-menu-item');
-                        //                        function calcMargin() {
-                        //                          for (var i = 0; i < item.length; i++){
-                        //                            i.style.marginTop = i.height*0.5 + 'px';
-                        //                            console.log("run method with " + item)
-                        //                          }
-                        //                        }
-                      </script>
                     </div>
+                    <script>
+                      var create_income_icon = document.getElementById("new-income__dropdown");
+                    </script>
                   </td>
                 </tr>
               </table>
@@ -1330,8 +1214,8 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="income-select_purse">Категория</label>
-              <select id="income-select_purse" class="col-xs-7 cur_select">
+              <label for="income-select_purse__cat-history">Категория</label>
+              <select id="income-select_purse__cat-history" class="col-xs-7 cur_select">
                 <option>Покупки</option>
                 <option>Еда</option>
                 <option>Автомобиль</option>
@@ -1339,8 +1223,8 @@
             </div>
 
             <div class="form-group">
-              <label for="select_purse">Счёт</label>
-              <select id="select_purse" class="col-xs-6 cur_select">
+              <label for="select_purse__cat-history">Счёт</label>
+              <select id="select_purse__cat-history" class="col-xs-6 cur_select">
                 <option>Не выбрано</option>
                 <option>Кошелек</option>
                 <option>Сбербанк</option>
@@ -1349,25 +1233,27 @@
             <div class="form-group">
               <table>
                 <tr>
-                  <td><input type="text" class="form-control modal__input--sum" id="sum_category"
-                             placeholder="Сумма расхода"></td>
-                  <td><label for="sum_category" class="rub_sym_label"><img class="rub__symbol"
-                                                                           src="images/rub.png"></label></td>
+                  <td>
+                    <input type="text" class="form-control modal__input--sum" id="sum_category__cat-history" placeholder="Сумма расхода">
+                  </td>
+                  <td>
+                    <label for="sum_category__cat-history" class="rub_sym_label"><img class="rub__symbol" src="images/rub.png"></label>
+                  </td>
                 </tr>
               </table>
             </div>
 
             <div class="btn-group col-xs-14 cur_btns radios-as-buttons">
               <div>
-                <input type="radio" name="option" id="today" class="radio_btn"/>
-                <label for="today" id="today_label" onclick="changeToday()">Сегодня</label>
+                <input type="radio" name="option" id="today__cat-history" class="radio_btn"/>
+                <label for="today__cat-history" id="today_label__cat-history" onclick="changeToday(dch, itch, iych)">Сегодня</label>
               </div>
               <div>
-                <input type="radio" name="option" id="yesterday" class="radio_btn"/>
-                <label for="yesterday" id="yesterday_label" onclick="changeYesterday()">Вчера</label>
+                <input type="radio" name="option" id="yesterday__cat-history" class="radio_btn"/>
+                <label for="yesterday__cat-history" id="yesterday_label__cat-history" onclick="changeYesterday(dch, itch, iych)">Вчера</label>
               </div>
-              <div id="other_cont">
-                <input type="date" name="option" id="other" class="radio-btn" onclick="changeDate()"/>
+              <div id="other_cont__cat-history">
+                <input type="date" name="option" id="other__cat-history" class="radio-btn" onclick="changeDate(dch, itch, iych)"/>
               </div>
             </div>
             <div class="form-group">
@@ -1377,30 +1263,9 @@
               </div>
             </div>
             <script>
-              var date_input = document.getElementById('other');
-              var input_today_label = document.getElementById('today_label');
-              var input_yesterday_label = document.getElementById('yesterday_label');
-              function changeDate() {
-                input_today_label.checked = false;
-                input_yesterday_label.checked = false;
-                date_input.style.background = '#ffffff';
-                input_today_label.style.background = '#eff0f0';
-                input_yesterday_label.style.background = '#eff0f0';
-              }
-              function changeToday() {
-                date_input.style.background = '#eff0f0';
-                input_today_label.style.background = '#ffffff';
-                input_yesterday_label.style.background = '#eff0f0';
-                input_today_label.checked = true;
-                input_yesterday_label.checked = false;
-              }
-              function changeYesterday() {
-                date_input.style.background = '#eff0f0';
-                input_today_label.style.background = '#eff0f0';
-                input_yesterday_label.style.background = '#ffffff';
-                input_today_label.checked = false;
-                input_yesterday_label.checked = true;
-              }
+              var dch = document.getElementById('other__cat-history');
+              var itch = document.getElementById('today_label__cat-history');
+              var iych = document.getElementById('yesterday_label__cat-history');
             </script>
           </form>
         </div>
@@ -1421,16 +1286,16 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="income-select_purse">Категория</label>
-              <select id="income-select_purse" class="col-xs-7 cur_select">
+              <label for="income-select_purse__history">Категория</label>
+              <select id="income-select_purse__history" class="col-xs-7 cur_select">
                 <option>Покупки</option>
                 <option>Еда</option>
                 <option>Автомобиль</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="select_purse">Счёт</label>
-              <select id="select_purse" class="col-xs-6 cur_select">
+              <label for="select_purse__history">Счёт</label>
+              <select id="select_purse__history" class="col-xs-6 cur_select">
                 <option>Не выбрано</option>
                 <option>Кошелек</option>
                 <option>Сбербанк</option>
@@ -1440,9 +1305,9 @@
             <div class="form-group">
               <table>
                 <tr>
-                  <td><input type="text" class="form-control modal__input--sum" id="sum_category"
+                  <td><input type="text" class="form-control modal__input--sum" id="sum_category__history"
                              placeholder="Сумма дохода"></td>
-                  <td><label for="sum_category" class="rub_sym_label"><img class="rub__symbol"
+                  <td><label for="sum_category__history" class="rub_sym_label"><img class="rub__symbol"
                                                                            src="images/rub.png"></label></td>
                 </tr>
               </table>
@@ -1450,15 +1315,15 @@
 
             <div class="btn-group col-xs-14 cur_btns radios-as-buttons">
               <div>
-                <input type="radio" name="option" id="today" class="radio_btn"/>
-                <label for="today" id="today_label" onclick="changeToday()">Сегодня</label>
+                <input type="radio" name="option" id="today__history" class="radio_btn"/>
+                <label for="today__history" id="today_label__history" onclick="changeToday(dhi, ithi, iyhi)">Сегодня</label>
               </div>
               <div>
-                <input type="radio" name="option" id="yesterday" class="radio_btn"/>
-                <label for="yesterday" id="yesterday_label" onclick="changeYesterday()">Вчера</label>
+                <input type="radio" name="option" id="yesterday__history" class="radio_btn"/>
+                <label for="yesterday__history" id="yesterday_label__history" onclick="changeYesterday(dhi, ithi, iyhi)">Вчера</label>
               </div>
-              <div id="other_cont">
-                <input type="date" name="option" id="other" class="radio-btn" onclick="changeDate()"/>
+              <div id="other_cont__history">
+                <input type="date" name="option" id="other__history" class="radio-btn" onclick="changeDate(dhi, ithi, iyhi)"/>
               </div>
             </div>
             <div class="form-group">
@@ -1468,30 +1333,9 @@
               </div>
             </div>
             <script>
-              var date_input = document.getElementById('other');
-              var input_today_label = document.getElementById('today_label');
-              var input_yesterday_label = document.getElementById('yesterday_label');
-              function changeDate() {
-                input_today_label.checked = false;
-                input_yesterday_label.checked = false;
-                date_input.style.background = '#ffffff';
-                input_today_label.style.background = '#eff0f0';
-                input_yesterday_label.style.background = '#eff0f0';
-              }
-              function changeToday() {
-                date_input.style.background = '#eff0f0';
-                input_today_label.style.background = '#ffffff';
-                input_yesterday_label.style.background = '#eff0f0';
-                input_today_label.checked = true;
-                input_yesterday_label.checked = false;
-              }
-              function changeYesterday() {
-                date_input.style.background = '#eff0f0';
-                input_today_label.style.background = '#eff0f0';
-                input_yesterday_label.style.background = '#ffffff';
-                input_today_label.checked = false;
-                input_yesterday_label.checked = true;
-              }
+              var dhi = document.getElementById('other__history');
+              var ithi = document.getElementById('today_label__history');
+              var iyhi = document.getElementById('yesterday_label__history');
             </script>
           </form>
         </div>
@@ -1512,8 +1356,8 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="name_lendor">Мне должен</label>
-              <input type="text" class="form-control modal__name_cat--bg" id="name_lendor">
+              <label for="name_lendor__history">Мне должен</label>
+              <input type="text" class="form-control modal__name_cat--bg" id="name_lendor__history">
             </div>
             <div class="form-group">
               <table>
@@ -1530,43 +1374,86 @@
               <select id="select_purse" class="col-xs-6 cur_select">
                 <option>Не выбрано</option>
                 <option>Кошелек</option>
-                <option>Сбербанк</option
+                <option>Сбербанк</option>
               </select>
             </div>
-
-
             <div class="form-group">
               <div class="col-xs-offset-2 transfer_save">
                 <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
                 <input type="submit" class="btn btn-default btn_margin" value="СОХРАНИТЬ">
               </div>
             </div>
-            <script>
-              var date_input = document.getElementById('other');
-              var input_today_label = document.getElementById('today_label');
-              var input_yesterday_label = document.getElementById('yesterday_label');
-              function changeDate() {
-                input_today_label.checked = false;
-                input_yesterday_label.checked = false;
-                date_input.style.background = '#ffffff';
-                input_today_label.style.background = '#eff0f0';
-                input_yesterday_label.style.background = '#eff0f0';
-              }
-              function changeToday() {
-                date_input.style.background = '#eff0f0';
-                input_today_label.style.background = '#ffffff';
-                input_yesterday_label.style.background = '#eff0f0';
-                input_today_label.checked = true;
-                input_yesterday_label.checked = false;
-              }
-              function changeYesterday() {
-                date_input.style.background = '#eff0f0';
-                input_today_label.style.background = '#eff0f0';
-                input_yesterday_label.style.background = '#ffffff';
-                input_today_label.checked = false;
-                input_yesterday_label.checked = true;
-              }
-            </script>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--<div class="container">-->
+  <!--<div class="modal fade" id="wallet-modal-window" role="dialog">-->
+    <!--<div class="modal-dialog modal-sm">-->
+      <!--<div class="modal-content">-->
+        <!--<div class="modal-header">-->
+          <!--<button type="button" class="close" data-dismiss="modal">╳</button>-->
+          <!--<h4 class="modal-title">Кошелёк</h4>-->
+        <!--</div>-->
+        <!--<div class="modal-body">-->
+          <!--<form class="form-horizontal">-->
+            <!--<div class="form-group">-->
+              <!--<label for="name_wal" class="col-xs-4 control-label">Название:</label>-->
+              <!--<div class="col-xs-8">-->
+                <!--<input type="text" class="form-control" id="name_wal" placeholder="Введите название">-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+              <!--<label for="sum_wal" class="col-xs-4 control-label">Сумма:</label>-->
+              <!--<div class="col-xs-8">-->
+                <!--<input type="text" class="form-control" id="sum_wal" placeholder="Введите сумму">-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+              <!--<div class="col-xs-offset-2 col-xs-10">-->
+                <!--<input type="submit" class="btn btn-default" value="Удалить">-->
+                <!--<input type="submit" class="btn btn-default" value="Сохранить">-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</form>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+<!-- pop up окно для создания цели-->
+<div class="container">
+  <div class="modal fade" id="goals-modal-window" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+            </div>
+            <div class="form-group">
+              <label for="name_target">Название цели</label>
+              <input type="email" class="form-control" id="name_target" placeholder="Машина">
+            </div>
+            <div class="form-group">
+              <label for="sum_target">Необходимая сумма</label>
+              <input type="email" class="form-control" id="sum_target" placeholder="1 800 000 Р">
+            </div>
+            <div class="form-group">
+              <label for="have_target">Собрано</label>
+              <input type="email" class="form-control" id="have_target" placeholder="800 000 Р">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
           </form>
         </div>
       </div>
