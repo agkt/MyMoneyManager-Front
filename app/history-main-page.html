@@ -108,24 +108,28 @@
     </p>
   </div>
   <div class="history-filtration">
-    <select>
+    <select class="select" id="select_way" onchange="fillDataType()">
       <option value="Не выбрано">Не выбрано</option>
       <option value="Кошелёк">Кошелёк</option>
       <option value="Сбербанк">Сбербанк</option>
       <option value="Рокетбанк">Рокетбанк</option>
     </select>
-    <select>
+    <select class="select" id="select_type" onchange="fillDataType()">
       <option value="Не выбрано">Не выбрано</option>
       <option value="Расходы">Расходы</option>
       <option value="Доходы">Доходы</option>
       <option value="Переводы">Переводы</option>
       <option value="Долги">Долги</option>
     </select>
-    <select>
+    <select class="select" id="select_category" onchange="fillDataType()">
       <option value="Не выбрано">Не выбрано</option>
       <option value="Покупки">Покупки</option>
       <option value="Автомобиль">Автомобиль</option>
       <option value="Дом">Дом</option>
+      <option value="Спорт">Спорт</option>
+      <option value="Техника">Техника</option>
+      <option value="Еда">Еда</option>
+      <option value="Одежда">Одежда</option>
     </select>
   </div>
 </div>
@@ -133,166 +137,12 @@
 <section class="history-page">
 
   <h4>Сегодня</h4>
-  <div class="history-flex-container">
-    <div class="history-flex-item costs" data-toggle="modal" data-target="#history-costs__modal-window">
-      <div>
-        <strong>Покупки</strong><br>
-        <small>Кошелёк</small>
-      </div>
-      <div>
-        <small>Расход</small>
-        <br>
-        <strong>-600 Р</strong>
-      </div>
-    </div>
-    <div class="history-flex-item costs" data-toggle="modal" data-target="#history-costs__modal-window">
-      <div>
-        <strong>Путешествия</strong><br>
-        <small>Карта Рокетбанк</small>
-      </div>
-      <div>
-        <small>Расход</small>
-        <br>
-        <strong>-24 030 Р</strong>
-      </div>
-    </div>
-    <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
-      <div>
-        <strong>Основная работа</strong><br>
-        <small>Карта Рокетбанк</small>
-      </div>
-      <div>
-        <small>Доход</small>
-        <br>
-        <strong>700 Р</strong>
-      </div>
-    </div>
-    <div class="history-flex-item transfer" data-toggle="modal" data-target="#history-transfer__modal-window">
-      <div>
-        <strong>Карта Рокетбанк</strong><br>
-        <small>Кошелёк</small>
-      </div>
-      <div>
-        <small>Перевод</small>
-        <br>
-        <strong>1500 Р</strong>
-      </div>
-    </div>
-    <div class="history-flex-item own-dept" data-toggle="modal" data-target="#history-own-dept__modal-window">
-      <div>
-        <strong>Жуковец Никита</strong><br>
-        <small>Карта Рокетбанк</small>
-      </div>
-      <div>
-        <small>Долг</small>
-        <br>
-        <strong>-5499 Р</strong>
-      </div>
-    </div>
-    <div class="history-flex-item costs" data-toggle="modal" data-target="#history-costs__modal-window">
-      <div>
-        <strong>Покупки</strong><br>
-        <small>Кошелёк</small>
-      </div>
-      <div>
-        <small>Расход</small>
-        <br>
-        <strong>-599 Р</strong>
-      </div>
-    </div>
-  </div>
+  <div class="history-flex-container"></div>
 
-  <h4>Вчера</h4>
-  <div class="history-flex-container">
-    <div class="history-flex-item dept" data-toggle="modal" data-target="#history-dept__modal-window">
-      <div>
-        <strong>Алексей Пушков</strong><br>
-        <small>Кошелёк</small>
-      </div>
-      <div>
-        <small>Долг</small>
-        <br>
-        <strong>+5499 Р</strong>
-      </div>
-    </div>
-    <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
-      <div>
-        <strong>Основная работа</strong><br>
-        <small>Карта Рокетбанк</small>
-      </div>
-      <div>
-        <small>Доход</small>
-        <br>
-        <strong>700 Р</strong>
-      </div>
-    </div>
-    <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
-      <div>
-        <strong>Основная работа</strong><br>
-        <small>Карта Рокетбанк</small>
-      </div>
-      <div>
-        <small>Доход</small>
-        <br>
-        <strong>700 Р</strong>
-      </div>
-    </div>
-    <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
-      <div>
-        <strong>Основная работа</strong><br>
-        <small>Карта Рокетбанк</small>
-      </div>
-      <div>
-        <small>Доход</small>
-        <br>
-        <strong>700 Р</strong>
-      </div>
-    </div>
-    <div class="history-flex-item own-dept" data-toggle="modal" data-target="#history-own-dept__modal-window">
-      <div>
-        <strong>Жуковец Никита</strong><br>
-        <small>Карта Рокетбанк</small>
-      </div>
-      <div>
-        <small>Долг</small>
-        <br>
-        <strong>-5499 Р</strong>
-      </div>
-    </div>
-    <div class="history-flex-item transfer" data-toggle="modal" data-target="#history-transfer__modal-window">
-      <div>
-        <strong>Карта Рокетбанк</strong><br>
-        <small>Кошелёк</small>
-      </div>
-      <div>
-        <small>Перевод</small>
-        <br>
-        <strong>1500 Р</strong>
-      </div>
-    </div>
-    <div class="history-flex-item costs" data-toggle="modal" data-target="#history-costs__modal-window">
-      <div>
-        <strong>Покупки</strong><br>
-        <small>Карта Рокетбанк</small>
-      </div>
-      <div>
-        <small>Расход</small>
-        <br>
-        <strong>-599 Р</strong>
-      </div>
-    </div>
-    <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
-      <div>
-        <strong>Подарок на др</strong><br>
-        <small>Карта Рокетбанк</small>
-      </div>
-      <div>
-        <small>Доход</small>
-        <br>
-        <strong>5000 Р</strong>
-      </div>
-    </div>
-  </div>
+  <!--<h4>Вчера</h4>-->
+  <!--<div class="history-flex-container">-->
+
+  <!--</div>-->
 </section>
 
 <!-- pop up окно создание кошелька-->
@@ -640,5 +490,6 @@
 </script>
 
 <script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="scripts/filtration.js"></script>
 </body>
 </html>

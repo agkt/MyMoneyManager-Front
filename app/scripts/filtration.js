@@ -1,83 +1,137 @@
 /**
  * Created by katemrrr on 18.07.17.
  */
-
+// при загрузке страницы загружается полный список
 $(window).load(function(){
     $('#select_category').hide();
-    for (var  j = 0; j < data.operations.length; j++){
-        $('.table').append("<tr>" +
-            "<td><p> Операция: " + data.operations[j].name + " |||| Сумма: " + data.operations[j].price + " ||||  Кошелек: "
-            + data.operations[j].way + " ||||  Категория: " + data.operations[j].category + "</p></td>" +
-            "</tr>"
-        );
-    }
+    showData(data.operations);
 });
 
+
+// массив данных
 var data = {
     operations: [
         {
-            name: 'Перевод',
-            way: 'Наличные',
-            category: '',
-            price: 2230
+            name: 'Покупки',
+            way: 'Кошелёк',
+            category: 'Расходы',
+            price: -2230,
+            date: '18.07.2017'
         },
         {
-            name: 'Доход',
-            way: 'РокетБанк',
-            category: '',
-            price: 8320
+            name: 'Путешествия',
+            way: 'Рокетбанк',
+            category: 'Расходы',
+            price: -8320,
+            date: '18.07.2017'
         },
         {
-            name: 'Расход',
+            name: 'Основная работа',
+            way: 'Рокетбанк',
+            category: 'Доходы',
+            price: +40000,
+            date: '16.07.2017'
+        },
+        {
+            name: 'Рокетбанк',
+            way: 'Кошелёк',
+            category: 'Переводы',
+            price: 20230,
+            date: '16.07.2017'
+        },
+        {
+            name: 'Жуковец Никита',
             way: 'Сбербанк',
-            category: 'Спорт',
-            price: 402
+            category: 'Долги',
+            price: -800,
+            date: '17.07.2017'
         },
         {
-            name: 'Расход',
-            way: 'Наличные',
-            category: 'Техника',
-            price: 10200
-        },
-        {
-            name: 'Перевод',
-            way: 'Наличные',
-            category: '',
-            price: 20230
-        },
-        {
-            name: 'Перевод',
+            name: 'Покупки',
             way: 'Сбербанк',
-            category: '',
-            price: 800
+            category: 'Расходы',
+            price: -2230,
+            date: '17.07.2017'
         },
         {
-            name: 'Расход',
+            name: 'Одежда',
+            way: 'Рокетбанк',
+            category: 'Расходы',
+            price: -8320,
+            date: '16.07.2017'
+        },
+        {
+            name: 'Подработка',
+            way: 'Рокетбанк',
+            category: 'Доходы',
+            price: +12000,
+            date: '16.07.2017'
+        },
+        {
+            name: 'Рокетбанк',
+            way: 'Кошелёк',
+            category: 'Переводы',
+            price: 2000,
+            date: '16.07.2017'
+        },
+        {
+            name: 'Пушков Александр',
             way: 'Сбербанк',
-            category: 'Одежда',
-            price: 4322
+            category: 'Долги',
+            price: -300,
+            date: '15.07.2017'
         },
         {
-            name: 'Расход',
-            way: 'РокетБанк',
-            category: 'Еда',
-            price: 1203
+            name: 'Еда',
+            way: 'Кошелёк',
+            category: 'Расходы',
+            price: 20,
+            date: '15.07.2017'
+        },
+        {
+            name: 'Еда',
+            way: 'Рокетбанк',
+            category: 'Расходы',
+            price: 8320,
+            date: '15.07.2017'
+        },
+        {
+            name: 'Фриланс',
+            way: 'Рокетбанк',
+            category: 'Доходы',
+            price: 4000,
+            date: '15.07.2017'
+        },
+        {
+            name: 'Сбербанк',
+            way: 'Рокетбанк',
+            category: 'Переводы',
+            price: 20230,
+            date: '15.07.2017'
+        },
+        {
+            name: 'Никитин Никита',
+            way: 'Сбербанк',
+            category: 'Долги',
+            price: -800,
+            date: '14.07.2017'
         }
+
     ]
 };
 
 function fillDataType() {
 
-    $(".table tr").remove();
+    $('.history-flex-item').remove();
 
     var filterData = [];
-    var waySel = $("#select_way option:selected").text(); // кошелек/карта
-    var typeSel = $("#select_type option:selected").text(); // доход/расход
+    var waySel = $('#select_way option:selected').text(); // кошелек/карта
+    var typeSel = $('#select_type option:selected').text(); // доход/расход
     var categorySel; // категория расходов
 
-    if(typeSel == "Расход") {
+    if(typeSel == "Расходы") {
         $('#select_category').show();
-        categorySel = $("#select_category option:selected").text();
+        categorySel = $('#select_category option:selected').text();
     } else {
         $('#select_category').hide();
         categorySel = "Не выбрано";
@@ -86,41 +140,108 @@ function fillDataType() {
     var countPoints = 0;
     for(var j = 0; j < data.operations.length; j++) {
         countPoints = 0;
-        if (typeSel == "Не выбрано" || typeSel == data.operations[j].name) {
+        if (typeSel == "Не выбрано" || typeSel == data.operations[j].category) {
             countPoints++;
         }
         if (waySel == "Не выбрано" || waySel == data.operations[j].way) {
             countPoints++;
         }
-        if (categorySel == "Не выбрано" || categorySel == data.operations[j].category) {
+        if (categorySel == "Не выбрано" || categorySel == data.operations[j].name) {
             countPoints++;
         }
         if(countPoints == 3){
             filterData.push(data.operations[j]);
         }
     }
-    for(var j = 0; j < filterData.length; j++) {
-        $('.table').append("<tr>" +
-            "<td><p> Операция: " + filterData[j].name + " |||| Сумма: " + filterData[j].price + " ||||  Кошелек: "
-            + filterData[j].way + " ||||  Категория: " + filterData[j].category + "</p></td>" +
-            "</tr>"
-        );
-    }
+    // console.log(filterData);
+    showData(filterData);
 }
-function fillTable() {
-    for (i = 0; i < data.operations.length; i++) {
-        if (data.operations[i].category == '') {
-            $('.table').append("<tr>" +
-                "<td><p> Операция:" + data.operations[i].name + "  Сумма:" + data.operations[i].price + "  Кошелек:"
-                + data.operations[i].way + "</p></td>" +
-                "</tr>"
-            );
+// function fillTable() {
+//     for (i = 0; i < data.operations.length; i++) {
+//         if (data.operations[i].category == '') {
+//             $('.table').append("<tr>" +
+//                 "<td><p> Операция:" + data.operations[i].name + "  Сумма:" + data.operations[i].price + "  Кошелек:"
+//                 + data.operations[i].way + "</p></td>" +
+//                 "</tr>"
+//             );
+//         } else {
+//             $('.table').append("<tr>" +
+//                 "<td><p> Операция:" + data.operations[i].name + "  Сумма:" + data.operations[i].price + "  Кошелек:"
+//                 + data.operations[i].way + "</p></td>" +
+//                 "</tr>"
+//             );
+//         }
+//     }
+// }
+
+function showData(arr) {
+    for (var  i = 0; i < arr.length; i++){
+        // console.log(data.operations[i].category);
+        if (arr[i].category == "Расходы") {
+            $('.history-flex-container').append("" +
+                "<div class='history-flex-item costs' data-toggle='modal' data-target='#history-costs__modal-window'>" +
+                "<div>" +
+                "<strong>"+ arr[i].name +"</strong><br>" +
+                "<small>"+ arr[i].way + "</small> " +
+                "</div> " +
+                "<div> " +
+                "<small>"+ arr[i].category +"</small> " +
+                "<br> " +
+                "<strong>"+ arr[i].price +" &#8381;</strong>" +
+                "</div> " +
+                "</div>");
+        } else if ((arr[i].category == "Долги") && (arr[i].price < 0)) {
+            $('.history-flex-container').append("" +
+                "<div class='history-flex-item own-dept' data-toggle='modal' data-target='#history-own-dept__modal-window'>" +
+                "<div>" +
+                "<strong>"+ arr[i].name +"</strong><br>" +
+                "<small>"+ arr[i].way + "</small> " +
+                "</div> " +
+                "<div> " +
+                "<small>"+ arr[i].category +"</small> " +
+                "<br> " +
+                "<strong>"+ arr[i].price +" &#8381;</strong>" +
+                "</div> " +
+                "</div>");
+        } else if ((arr[i].category == "Долги") && (arr[i].price > 0)) {
+            $('.history-flex-container').append("" +
+                "<div class='history-flex-item dept' data-toggle='modal' data-target='#history-dept__modal-window'>" +
+                "<div>" +
+                "<strong>"+ arr[i].name +"</strong><br>" +
+                "<small>"+ arr[i].way + "</small> " +
+                "</div> " +
+                "<div> " +
+                "<small>"+ arr[i].category +"</small> " +
+                "<br> " +
+                "<strong>"+ arr[i].price +" &#8381;</strong>" +
+                "</div> " +
+                "</div>");
+        } else if (arr[i].category == "Доходы"){
+            $('.history-flex-container').append("" +
+                "<div class='history-flex-item earnings' data-toggle='modal' data-target='#history-earnings__modal-window'>" +
+                "<div>" +
+                "<strong>"+ arr[i].name +"</strong><br>" +
+                "<small>"+ arr[i].way + "</small> " +
+                "</div> " +
+                "<div> " +
+                "<small>"+ arr[i].category +"</small> " +
+                "<br> " +
+                "<strong>"+ arr[i].price +" &#8381;</strong>" +
+                "</div> " +
+                "</div>");
         } else {
-            $('.table').append("<tr>" +
-                "<td><p> Операция:" + data.operations[i].name + "  Сумма:" + data.operations[i].price + "  Кошелек:"
-                + data.operations[i].way + "</p></td>" +
-                "</tr>"
-            );
+            $('.history-flex-container').append("" +
+                "<div class='history-flex-item transfer' data-toggle='modal' data-target='#history-transfer__modal-window'>" +
+                "<div>" +
+                "<strong>"+ arr[i].name +"</strong><br>" +
+                "<small>"+ arr[i].way + "</small> " +
+                "</div> " +
+                "<div> " +
+                "<small>"+ arr[i].category +"</small> " +
+                "<br> " +
+                "<strong>"+ arr[i].price +" &#8381;</strong>" +
+                "</div> " +
+                "</div>");
         }
     }
 }
