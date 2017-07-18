@@ -353,7 +353,7 @@ div, section ::before, ::after {
     border: solid 2px #dbe4eb;
 }
 
-.cur_btns button, .close {
+.cur_btns button, .close, .return-button button, .history-button button {
     outline: 0 !important;
 }
 
@@ -431,11 +431,16 @@ div, section ::before, ::after {
     border-radius: 0;
     transition: .3s;
 }
-.transfer_save input:hover {
+.transfer_save input:hover, .return-button button:hover, .history-button button:hover {
     background: #ee364f;
     color: #ffffff;
     transition: .3s;
     transform: scale(.9);
+}
+
+.return-button button, .history-button button {
+    color: #ffffff;
+    transition: .3s;
 }
 
 .dept-tab {

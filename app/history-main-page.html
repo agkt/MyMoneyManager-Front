@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Header main page</title>
+  <title>History main page</title>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -20,447 +21,330 @@
           integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
           crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="styles/main.css">
+
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-<section class="nav_block">
-  <div class="menu">
-    <ul class="menu__tabs">
-      <li class="tab">
-        <a href="#content-one" id="one-tab" class="active-tab">Расходы</a>
-        <p>Июль 2017</p>
-        <p class="sum">-2183 &#8381</p>
-      </li>
-      <li class="tab">
-        <a href="#content-two" id="two-tab" class="tab">Доходы</a>
-        <p>Июль 2017</p>
-        <p class="sum">25000 &#8381</p>
-      </li>
-      <li class="tab">
-        <a href="#content-three" id="three-tab" class="tab">Переводы</a>
-      </li>
-      <li class="tab">
-        <a href="#content-fourth" id="fourth-tab" class="tab">Долги</a>
-      </li>
-    </ul>
+<section class="header">
+  <div class="header-wrapper-first">
+    <div class="header-logo">
+      <a href="#">МмМ<img src="./images/logo.png"></a>
+      <a href="#">ttl2.yadgar13@gmail.com<img src="./images/user-icon.png"></a>
+    </div>
   </div>
-  <div class="content">
-    <div id="content-one" class="content__container">
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
+  <div class="header-wrapper-second">
+    <div class="header-content">
+      <div class="header-numbers">
+        <div class="balance">
+          <h1>32000 Р</h1><br>
+          <h3>Общий баланс</h3>
+        </div>
+        <div class="today-costs">
+          <h2>2345 Р</h2>
+          <h3>Расходы за сегодня</h3>
+        </div>
       </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
+
+      <div class="goals-container">
+        <div class="goals-item" data-toggle="modal" data-target="#goals-modal-window">
+          <img class="goals-picture" src="images/goal-first.png">
+          <div class="bg">
+            <h2>Машина моей мечты ыааааа</h2>
+            <span>200 000 из 1 800 000 Р</span>
+          </div>
+        </div>
       </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Еда</a><br>
-        <img class="item__image" src="images/food.png"><br>
-        <p>1000 &#8381</p>
-      </div>
-      <div class="content__container__item" data-toggle="modal" data-target="#edit-category__modal-window">
-        <h3 class="item__plus">+</h3>
+
+
+      <div class="wallet-flex-container">
+        <div class="flex-wallet" data-toggle="modal" data-target="#wallet__modal-window">
+          <div>
+            <img src="./images/wallet.png">
+          </div>
+          <div>
+            <p>Кошелёк</p>
+            <p>1000 Р</p>
+          </div>
+
+        </div>
+        <div class="flex-wallet" data-toggle="modal" data-target="#wallet__modal-window">
+          <div>
+            <img src="./images/card.png">
+          </div>
+          <div>
+            <p>Рокетбанк</p>
+            <p>1000 Р</p>
+          </div>
+
+        </div>
+        <div class="flex-wallet" data-toggle="modal" data-target="#wallet__modal-window">
+          <div>
+            <img src="./images/card.png">
+          </div>
+          <div>
+            <p>Карта Сбербанк</p>
+            <p>1000 Р</p>
+          </div>
+
+        </div>
+
+        <div class="flex-wallet plus" data-toggle="modal" data-target="#create-wallet__modal-window">
+          <div>
+            <img src="./images/plus-iсon.png">
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div id="content-two" class="content__container">
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Зарплата</a><br>
-        <img class="item__image" src="images/money.png"><br>
-        <p>15000 &#8381</p>
+<div class="history-navigation">
+  <div class="return-button">
+    <p>
+      <a href="index.html"><button type="button" class=""><img src="../images/left-arrow-button.png"> &nbsp;&nbsp; Назад </button></a>
+    </p>
+  </div>
+  <div class="history-filtration">
+    <select>
+      <option value="Не выбрано">Не выбрано</option>
+      <option value="Кошелёк">Кошелёк</option>
+      <option value="Сбербанк">Сбербанк</option>
+      <option value="Рокетбанк">Рокетбанк</option>
+    </select>
+    <select>
+      <option value="Не выбрано">Не выбрано</option>
+      <option value="Расходы">Расходы</option>
+      <option value="Доходы">Доходы</option>
+      <option value="Переводы">Переводы</option>
+      <option value="Долги">Долги</option>
+    </select>
+    <select>
+      <option value="Не выбрано">Не выбрано</option>
+      <option value="Покупки">Покупки</option>
+      <option value="Автомобиль">Автомобиль</option>
+      <option value="Дом">Дом</option>
+    </select>
+  </div>
+</div>
+
+<section class="history-page">
+
+  <h4>Сегодня</h4>
+  <div class="history-flex-container">
+    <div class="history-flex-item costs" data-toggle="modal" data-target="#history-costs__modal-window">
+      <div>
+        <strong>Покупки</strong><br>
+        <small>Кошелёк</small>
       </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Подработка</a><br>
-        <img class="item__image" src="images/money.png"><br>
-        <p>10000 &#8381</p>
-      </div>
-      <div class="content__container__item" data-toggle="modal" data-target="#edit-category__modal-window">
-        <h3 class="item__plus">+</h3>
-      </div>
-    </div>
-
-    <div id="content-three" class="content__container">
-      <form class="content__container__form">
-
-        <table>
-          <tr class="form__labels">
-            <td>Откуда</td>
-            <td></td>
-            <td>Сумма перевода</td>
-            <td></td>
-            <td>Куда</td>
-          </tr>
-          <tr>
-            <td>
-              <select class="content__container__form__select" id="select_out">
-                <option>Не выбрано</option>
-                <option>Сбербанк</option>
-                <option>Наличные</option>
-              </select>
-            </td>
-            <td class="form__hr">→</td>
-            <td><input type="text" class="form__input_text"></td>
-            <td class="form__hr">→</td>
-            <td>
-              <select class="content__container__form__select" id="select_in">
-                <option>Не выбрано</option>
-                <option>Сбербанк</option>
-                <option>Наличные</option>
-              </select>
-            </td>
-          </tr>
-        </table>
-
+      <div>
+        <small>Расход</small>
         <br>
-        <input type="submit" value="Перевести" class="form__input_submit">
-      </form>
+        <strong>-600 Р</strong>
+      </div>
     </div>
-
-    <div id="content-fourth" class="content__container">
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Вася</a><br>
-        <img class="item__image" src="images/need.jpg"><br>
-        <p>1500 &#8381</p>
+    <div class="history-flex-item costs" data-toggle="modal" data-target="#history-costs__modal-window">
+      <div>
+        <strong>Путешествия</strong><br>
+        <small>Карта Рокетбанк</small>
       </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Петя</a><br>
-        <img class="item__image" src="images/need.jpg"><br>
-        <p>300 &#8381</p>
+      <div>
+        <small>Расход</small>
+        <br>
+        <strong>-24 030 Р</strong>
       </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Коля</a><br>
-        <img class="item__image" src="images/need.jpg"><br>
-        <p>750 &#8381</p>
+    </div>
+    <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
+      <div>
+        <strong>Основная работа</strong><br>
+        <small>Карта Рокетбанк</small>
       </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Кирилл</a><br>
-        <img class="item__image" src="images/need.jpg"><br>
-        <p>1000 &#8381</p>
+      <div>
+        <small>Доход</small>
+        <br>
+        <strong>700 Р</strong>
       </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Вадим</a><br>
-        <img class="item__image" src="images/need.jpg"><br>
-        <p>250 &#8381</p>
+    </div>
+    <div class="history-flex-item transfer" data-toggle="modal" data-target="#history-transfer__modal-window">
+      <div>
+        <strong>Карта Рокетбанк</strong><br>
+        <small>Кошелёк</small>
       </div>
-      <div class="content__container__item">
-        <div class="edit_item"><a href="#" data-toggle="modal" data-target="#edit-category__modal-window"><img
-          src="images/edit.png"></a></div>
-        <a>Руслан</a><br>
-        <img class="item__image" src="images/need.jpg"><br>
-        <p>100 &#8381</p>
+      <div>
+        <small>Перевод</small>
+        <br>
+        <strong>1500 Р</strong>
       </div>
-      <div class="content__container__item" data-toggle="modal" data-target="#edit-category__modal-window">
-        <h3 class="item__plus">+</h3>
+    </div>
+    <div class="history-flex-item own-dept" data-toggle="modal" data-target="#history-own-dept__modal-window">
+      <div>
+        <strong>Жуковец Никита</strong><br>
+        <small>Карта Рокетбанк</small>
+      </div>
+      <div>
+        <small>Долг</small>
+        <br>
+        <strong>-5499 Р</strong>
+      </div>
+    </div>
+    <div class="history-flex-item costs" data-toggle="modal" data-target="#history-costs__modal-window">
+      <div>
+        <strong>Покупки</strong><br>
+        <small>Кошелёк</small>
+      </div>
+      <div>
+        <small>Расход</small>
+        <br>
+        <strong>-599 Р</strong>
       </div>
     </div>
   </div>
-  <script type="text/javascript" rel="script" src="js/tabs.js"></script>
 
-  <section class="history">
-    <h4>Сегодня</h4>
-    <div class="history-flex-container">
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Кошелёк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-600 Р</strong>
-        </div>
+  <h4>Вчера</h4>
+  <div class="history-flex-container">
+    <div class="history-flex-item dept" data-toggle="modal" data-target="#history-dept__modal-window">
+      <div>
+        <strong>Алексей Пушков</strong><br>
+        <small>Кошелёк</small>
       </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Путешествия</strong><br>
-          <small>Карта Рокетбанк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-24 030 Р</strong>
-        </div>
-      </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Основная работа</strong><br>
-          <small>Карта Рокетбанк</small>
-        </div>
-        <div>
-          <small>Доход</small>
-          <br>
-          <strong>700 Р</strong>
-        </div>
-      </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Карта Рокетбанк</strong><br>
-          <small>Кошелёк</small>
-        </div>
-        <div>
-          <small>Перевод</small>
-          <br>
-          <strong>1500 Р</strong>
-        </div>
-      </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Карта Рокетбанк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
-      </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Кошелёк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
+      <div>
+        <small>Долг</small>
+        <br>
+        <strong>+5499 Р</strong>
       </div>
     </div>
-
-    <h4>Вчера</h4>
-    <div class="history-flex-container">
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Карта Рокетбанк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
+    <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
+      <div>
+        <strong>Основная работа</strong><br>
+        <small>Карта Рокетбанк</small>
       </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Карта Рокетбанк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
-      </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Кошелёк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
-      </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Карта Рокетбанк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
-      </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Кошелёк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
-      </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Карта Рокетбанк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
-      </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Карта Рокетбанк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
-      </div>
-      <div class="history-flex-item">
-        <div>
-          <strong>Покупки</strong><br>
-          <small>Карта Рокетбанк</small>
-        </div>
-        <div>
-          <small>Расход</small>
-          <br>
-          <strong>-599 Р</strong>
-        </div>
+      <div>
+        <small>Доход</small>
+        <br>
+        <strong>700 Р</strong>
       </div>
     </div>
-
-    <div class="history-button">
-      <p>
-      <button type="button" class="">Вся история <img src="../images/right-arrow-button.png"> </button>
-      </p>
+    <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
+      <div>
+        <strong>Основная работа</strong><br>
+        <small>Карта Рокетбанк</small>
+      </div>
+      <div>
+        <small>Доход</small>
+        <br>
+        <strong>700 Р</strong>
+      </div>
     </div>
-  </section>
+    <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
+      <div>
+        <strong>Основная работа</strong><br>
+        <small>Карта Рокетбанк</small>
+      </div>
+      <div>
+        <small>Доход</small>
+        <br>
+        <strong>700 Р</strong>
+      </div>
+    </div>
+    <div class="history-flex-item own-dept" data-toggle="modal" data-target="#history-own-dept__modal-window">
+      <div>
+        <strong>Жуковец Никита</strong><br>
+        <small>Карта Рокетбанк</small>
+      </div>
+      <div>
+        <small>Долг</small>
+        <br>
+        <strong>-5499 Р</strong>
+      </div>
+    </div>
+    <div class="history-flex-item transfer" data-toggle="modal" data-target="#history-transfer__modal-window">
+      <div>
+        <strong>Карта Рокетбанк</strong><br>
+        <small>Кошелёк</small>
+      </div>
+      <div>
+        <small>Перевод</small>
+        <br>
+        <strong>1500 Р</strong>
+      </div>
+    </div>
+    <div class="history-flex-item costs" data-toggle="modal" data-target="#history-costs__modal-window">
+      <div>
+        <strong>Покупки</strong><br>
+        <small>Карта Рокетбанк</small>
+      </div>
+      <div>
+        <small>Расход</small>
+        <br>
+        <strong>-599 Р</strong>
+      </div>
+    </div>
+    <div class="history-flex-item earnings" data-toggle="modal" data-target="#history-earnings__modal-window">
+      <div>
+        <strong>Подарок на др</strong><br>
+        <small>Карта Рокетбанк</small>
+      </div>
+      <div>
+        <small>Доход</small>
+        <br>
+        <strong>5000 Р</strong>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- pop up окно создание кошелька-->
 <div class="container">
-  <div class="modal fade" id="wallet-modal-window" role="dialog">
+  <div class="modal fade" id="create-wallet__modal-window" role="dialog">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Кошелёк</h4>
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <h4 class="modal-title">Новый счёт</h4>
         </div>
         <div class="modal-body">
-          <form class="form-horizontal">
+          <form>
             <div class="form-group">
-              <label for="name" class="col-xs-4 control-label">Название:</label>
-              <div class="col-xs-8">
-                <input type="email" class="form-control" id="name" placeholder="Введите название">
-              </div>
+              <table>
+                <tr>
+                  <td><label for="create-wallet__name">Название счёта</label></td>
+                </tr>
+                <tr>
+                  <td class="td-container"><input type="text" class="form-control modal__name_cat" id="create-wallet__name">
+                    <img src="images/cart.png" class="dropdown-toggle rub__symbol" id="create-wallet__dropdown" data-toggle="dropdown">
+                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="dropdown">
+                      <div class="dropdown-menu-container">
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/wallet.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
+                      </div>
+                    </div>
+                    <script>
+                      var create_wallet_icon = document.getElementById("create-wallet__dropdown");
+                      function changeIcon(main_img, obj) {
+                        main_img.src = obj.src;
+                      }
+                    </script>
+                  </td>
+                </tr>
+              </table>
             </div>
             <div class="form-group">
-              <label for="sum" class="col-xs-4 control-label">Сумма:</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" id="sum" placeholder="Введите сумму">
-              </div>
+              <label for="create-wallet__balance">Баланс</label>
+              <input type="text" class="form-control modal__name_cat modal__name_cat--bg" id="create-wallet__balance">
             </div>
             <div class="form-group">
-              <div class="col-xs-offset-2 col-xs-10">
-                <input type="submit" class="btn btn-default" value="Удалить">
-                <input type="submit" class="btn btn-default" value="Сохранить">
+              <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                <input type="submit" class="btn btn-default" value="ДОБАВИТЬ">
               </div>
             </div>
           </form>
@@ -470,35 +354,251 @@
   </div>
 </div>
 
+<!-- pop up окно редактирования кошелька-->
 <div class="container">
-  <div class="modal fade" id="goals-modal-window" role="dialog">
+  <div class="modal fade" id="wallet__modal-window" role="dialog">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <h4 class="modal-title">Редактирование счёта</h4>
+        </div>
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="exampleInputFile">File input</label>
-              <input type="file" id="exampleInputFile">
+              <table>
+                <tr>
+                  <td><label for="edit-wallet__name">Название счёта</label></td>
+                </tr>
+                <tr>
+                  <td class="td-container"><input type="text" class="form-control modal__name_cat" id="edit-wallet__name">
+                    <img src="images/cart.png" class="dropdown-toggle rub__symbol" id="wallet-icon__dropdown" data-toggle="dropdown">
+                    <div class="dropdown-menu change_icon" role="menu" aria-labelledby="wallet-icon__dropdown">
+                      <div class="dropdown-menu-container">
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/wallet.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
+                        <div role="presentation" class="dropdown-menu-item empty"></div>
+                      </div>
+                    </div>
+                    <script>
+                      var edit_wallet_icon = document.getElementById("wallet-icon__dropdown");
+                    </script>
+                  </td>
+                </tr>
+              </table>
             </div>
             <div class="form-group">
-              <label for="email">Название цели</label>
-              <input type="email" class="form-control" id="email" placeholder="Машина">
+              <label for="edit-wallet__balance">Баланс</label>
+              <td><input type="text" class="form-control modal__name_cat modal__name_cat--bg" id="edit-wallet__balance"></td>
             </div>
             <div class="form-group">
-              <label for="email">Необходимая сумма</label>
-              <input type="email" class="form-control" id="email" placeholder="1 800 000 Р">
+              <div class="col-xs-offset-2 col-xs-14 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                <input type="submit" class="btn btn-default" value="СОХРАНИТЬ">
+              </div>
             </div>
-            <div class="form-group">
-              <label for="email">Собрано</label>
-              <input type="email" class="form-control" id="email" placeholder="800 000 Р">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
           </form>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- pop up окно для истории расходов-->
+<div class="container">
+  <div class="modal fade" id="history-costs__modal-window" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <h4 class="modal-title">История: расходы</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="income-select_purse__cat-history">Категория</label>
+              <select id="income-select_purse__cat-history" class="col-xs-7 cur_select">
+                <option>Покупки</option>
+                <option>Еда</option>
+                <option>Автомобиль</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="select_purse__cat-history">Счёт</label>
+              <select id="select_purse__cat-history" class="col-xs-6 cur_select">
+                <option>Не выбрано</option>
+                <option>Кошелек</option>
+                <option>Сбербанк</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <table>
+                <tr>
+                  <td>
+                    <input type="text" class="form-control modal__input--sum" id="sum_category__cat-history" placeholder="Сумма расхода">
+                  </td>
+                  <td>
+                    <label for="sum_category__cat-history" class="rub_sym_label"><img class="rub__symbol" src="images/rub.png"></label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="btn-group col-xs-14 cur_btns radios-as-buttons">
+              <div>
+                <input type="radio" name="option" id="today__cat-history" class="radio_btn"/>
+                <label for="today__cat-history" id="today_label__cat-history" onclick="changeToday(dch, itch, iych)">Сегодня</label>
+              </div>
+              <div>
+                <input type="radio" name="option" id="yesterday__cat-history" class="radio_btn"/>
+                <label for="yesterday__cat-history" id="yesterday_label__cat-history" onclick="changeYesterday(dch, itch, iych)">Вчера</label>
+              </div>
+              <div id="other_cont__cat-history">
+                <input type="date" name="option" id="other__cat-history" class="radio-btn" onclick="changeDate(dch, itch, iych)"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-offset-2 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                <input type="submit" class="btn btn-default btn_margin" value="СОХРАНИТЬ">
+              </div>
+            </div>
+            <script>
+              var dch = document.getElementById('other__cat-history');
+              var itch = document.getElementById('today_label__cat-history');
+              var iych = document.getElementById('yesterday_label__cat-history');
+            </script>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- pop up окно для истории доходов-->
+<div class="container">
+  <div class="modal fade" id="history-earnings__modal-window" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <h4 class="modal-title">История: доходы</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="income-select_purse__history">Категория</label>
+              <select id="income-select_purse__history" class="col-xs-7 cur_select">
+                <option>Покупки</option>
+                <option>Еда</option>
+                <option>Автомобиль</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="select_purse__history">Счёт</label>
+              <select id="select_purse__history" class="col-xs-6 cur_select">
+                <option>Не выбрано</option>
+                <option>Кошелек</option>
+                <option>Сбербанк</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <table>
+                <tr>
+                  <td><input type="text" class="form-control modal__input--sum" id="sum_category__history"
+                             placeholder="Сумма дохода"></td>
+                  <td><label for="sum_category__history" class="rub_sym_label"><img class="rub__symbol"
+                                                                                    src="images/rub.png"></label></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="btn-group col-xs-14 cur_btns radios-as-buttons">
+              <div>
+                <input type="radio" name="option" id="today__history" class="radio_btn"/>
+                <label for="today__history" id="today_label__history" onclick="changeToday(dhi, ithi, iyhi)">Сегодня</label>
+              </div>
+              <div>
+                <input type="radio" name="option" id="yesterday__history" class="radio_btn"/>
+                <label for="yesterday__history" id="yesterday_label__history" onclick="changeYesterday(dhi, ithi, iyhi)">Вчера</label>
+              </div>
+              <div id="other_cont__history">
+                <input type="date" name="option" id="other__history" class="radio-btn" onclick="changeDate(dhi, ithi, iyhi)"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-offset-2 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                <input type="submit" class="btn btn-default btn_margin" value="СОХРАНИТЬ">
+              </div>
+            </div>
+            <script>
+              var dhi = document.getElementById('other__history');
+              var ithi = document.getElementById('today_label__history');
+              var iyhi = document.getElementById('yesterday_label__history');
+            </script>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- pop up окно для истории долгов, которые отдали мне-->
+<div class="container">
+  <div class="modal fade" id="history-dept__modal-window" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <h4 class="modal-title">История: долги</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name_lendor__history">Мне должен</label>
+              <input type="text" class="form-control modal__name_cat--bg" id="name_lendor__history">
+            </div>
+            <div class="form-group">
+              <table>
+                <tr>
+                  <td><input type="text" class="form-control modal__input--sum" id="sum_category"
+                             placeholder="Сумма долга"></td>
+                  <td><label for="sum_category" class="rub_sym_label"><img class="rub__symbol"
+                                                                           src="images/rub.png"></label></td>
+                </tr>
+              </table>
+            </div>
+            <div class="form-group">
+              <label for="select_purse">Счёт</label>
+              <select id="select_purse" class="col-xs-6 cur_select">
+                <option>Не выбрано</option>
+                <option>Кошелек</option>
+                <option>Сбербанк</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-offset-2 transfer_save">
+                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
+                <input type="submit" class="btn btn-default btn_margin" value="СОХРАНИТЬ">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -528,5 +628,17 @@
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.wallet-flex-container').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3
+    });
+  });
+</script>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>

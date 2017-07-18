@@ -19,6 +19,17 @@ body {
   margin-top: 55px;
 }
 
+.history-navigation {
+  width: 89%;
+  margin: 0 auto;
+  margin-top: 93px;
+}
+
+.history-page {
+  width: 89%;
+  margin: 0 auto;
+}
+
 .history-flex-container {
   width: 100%;
   display: flex;
@@ -96,40 +107,105 @@ body {
   color: rgba(51, 51, 51, 0.5);
 }
 
-
 .history-button {
   margin: 10px 0;
   float: right;
 }
-.history-button p{
+
+.return-button {
+  float: left;
+  width: 20.3%;
+  margin-right: 4%;
+}
+
+.history-button p,
+.return-button p {
   font-family: Roboto, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   text-align: left;
   color: #ffffff;
 }
 
-.history-button button {
+.history-button p {
+  font-size: 18px;
+}
+
+.return-button p {
+  font-size: 16px;
+}
+
+.history-button button,
+.return-button button {
   text-transform: uppercase;
-  width: 278px;
   height: 60px;
   border: 0;
   padding: 0;
   background-color: #ee364f;
 }
 
-.costs strong:last-child{
+.history-button button {
+  width: 278px;
+}
+
+.return-button button {
+  width: 100%;
+  margin-right: 50px;
+}
+
+.history-page h4 {
+  margin-bottom: 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  color: #333333;
+  float: left;
+  padding-right: 1200px;
+}
+
+.history-page h4:first-child {
+  margin-top: 45px;
+}
+
+.history-page strong {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: #333333;
+}
+
+.history-filtration {
+  margin-top: 4px;
+  width: 75.7%;
+  float: right;
+}
+
+.history-filtration select {
+  width: 31.3%;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 2px #eeeeee;
+  margin-left: 1%;
+}
+
+.costs strong:last-child {
   color: #ee364f;
 }
-.own-dept strong:last-child{
+
+.own-dept strong:last-child {
   color: #ee364f;
 }
-.dept strong:last-child{
-  color:#4bbf6b;
+
+.dept strong:last-child {
+  color: #4bbf6b;
 }
-.earnings strong:last-child{
-  color:#4bbf6b;
+
+.earnings strong:last-child {
+  color: #4bbf6b;
 }
+
 .transfer strong:last-child {
-  color:#4bbf6b;
+  color: #4bbf6b;
 }
