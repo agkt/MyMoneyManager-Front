@@ -61,7 +61,7 @@
             <img class="goals-picture" src="images/goal-first.png" alt="...">
             <div class="bg">
               <div class="carousel-caption">
-                <button>Новая цель</button>
+                <button data-toggle="modal" data-target="#create-goal__modal-window">Новая цель</button>
                 <h2>Машина моей мечты ааааа</h2>
                 <h6>200 000 из 1 800 000 Р</h6>
               </div>
@@ -72,7 +72,7 @@
             <img class="goals-picture" src="images/goal-second.png" alt="...">
             <div class="bg">
               <div class="carousel-caption">
-                <button>Новая цель</button>
+                <button data-toggle="modal" data-target="#create-goal__modal-window">Новая цель</button>
                 <h2>Путешествие в Норвегию</h2>
                 <h6>54 000 из 250 000 Р</h6>
               </div>
@@ -83,7 +83,7 @@
             <img class="goals-picture" src="images/goal-third.png" alt="...">
             <div class="bg">
               <div class="carousel-caption">
-                <button>Новая цель</button>
+                <button data-toggle="modal" data-target="#create-goal__modal-window">Новая цель</button>
                 <h2>Iphone 8</h2>
                 <h6>8 000 из 80 000 Р</h6>
               </div>
@@ -103,7 +103,6 @@
       </div>
 
 
-
       <div class="wallet-flex-container">
         <div class="flex-wallet" data-toggle="modal" data-target="#wallet__modal-window">
           <div>
@@ -115,6 +114,7 @@
           </div>
 
         </div>
+
         <div class="flex-wallet" data-toggle="modal" data-target="#wallet__modal-window">
           <div>
             <img src="./images/card.png">
@@ -125,6 +125,7 @@
           </div>
 
         </div>
+
         <div class="flex-wallet" data-toggle="modal" data-target="#wallet__modal-window">
           <div>
             <img src="./images/card.png">
@@ -133,7 +134,6 @@
             <p>Карта Сбербанк</p>
             <p>1000 Р</p>
           </div>
-
         </div>
 
         <div class="flex-wallet plus" data-toggle="modal" data-target="#create-wallet__modal-window">
@@ -149,24 +149,26 @@
 <section class="history-navigation clearfix">
   <div class="return-button">
     <p>
-      <a href="index.html"><button type="button" class=""><img src="../images/left-arrow-button.png"> &nbsp;&nbsp; Назад </button></a>
+      <a href="index.html">
+        <button type="button" class=""><img src="../images/left-arrow-button.png"> &nbsp;&nbsp; Назад</button>
+      </a>
     </p>
   </div>
   <div class="history-filtration">
-    <select class="select" id="select_way" onchange="fillDataType(data.operations)">
+    <select class="select" id="select_way" onchange="fillDataType()">
       <option value="Не выбрано">Не выбрано</option>
       <option value="Кошелёк">Кошелёк</option>
       <option value="Сбербанк">Сбербанк</option>
       <option value="Рокетбанк">Рокетбанк</option>
     </select>
-    <select class="select" id="select_type" onchange="fillDataType(data.operations)">
+    <select class="select" id="select_type" onchange="fillDataType()">
       <option value="Не выбрано">Не выбрано</option>
       <option value="Расходы">Расходы</option>
       <option value="Доходы">Доходы</option>
       <option value="Переводы">Переводы</option>
       <option value="Долги">Долги</option>
     </select>
-    <select class="select" id="select_category" onchange="fillDataType(data.operations)">
+    <select class="select" id="select_category" onchange="fillDataType()">
       <option value="Не выбрано">Не выбрано</option>
       <option value="Покупки">Покупки</option>
       <option value="Автомобиль">Автомобиль</option>
@@ -200,18 +202,28 @@
                   <td><label for="create-wallet__name">Название счёта</label></td>
                 </tr>
                 <tr>
-                  <td class="td-container"><input type="text" class="form-control modal__name_cat" id="create-wallet__name">
-                    <img src="images/cart.png" class="dropdown-toggle rub__symbol" id="create-wallet__dropdown" data-toggle="dropdown">
+                  <td class="td-container"><input type="text" class="form-control modal__name_cat"
+                                                  id="create-wallet__name">
+                    <img src="images/cart.png" class="dropdown-toggle rub__symbol" id="create-wallet__dropdown"
+                         data-toggle="dropdown">
                     <div class="dropdown-menu change_icon" role="menu" aria-labelledby="dropdown">
                       <div class="dropdown-menu-container">
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/cart.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/suitcase.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/camera.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/bag.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/wallet.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/shape.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/mobile.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(create_wallet_icon, this)" src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(create_wallet_icon, this)" src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(create_wallet_icon, this)" src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(create_wallet_icon, this)" src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(create_wallet_icon, this)" src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(create_wallet_icon, this)" src="images/wallet.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(create_wallet_icon, this)" src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(create_wallet_icon, this)" src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(create_wallet_icon, this)" src="images/grantma.png" href="#"></div>
                         <div role="presentation" class="dropdown-menu-item empty"></div>
                         <div role="presentation" class="dropdown-menu-item empty"></div>
                       </div>
@@ -259,18 +271,28 @@
                   <td><label for="edit-wallet__name">Название счёта</label></td>
                 </tr>
                 <tr>
-                  <td class="td-container"><input type="text" class="form-control modal__name_cat" id="edit-wallet__name">
-                    <img src="images/cart.png" class="dropdown-toggle rub__symbol" id="wallet-icon__dropdown" data-toggle="dropdown">
+                  <td class="td-container"><input type="text" class="form-control modal__name_cat"
+                                                  id="edit-wallet__name">
+                    <img src="images/cart.png" class="dropdown-toggle rub__symbol" id="wallet-icon__dropdown"
+                         data-toggle="dropdown">
                     <div class="dropdown-menu change_icon" role="menu" aria-labelledby="wallet-icon__dropdown">
                       <div class="dropdown-menu-container">
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/cart.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/suitcase.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/camera.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/bag.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/wallet.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/shape.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/mobile.png" href="#"></div>
-                        <div role="presentation" class="dropdown-menu-item"><img onclick="changeIcon(edit_wallet_icon, this)" src="images/grantma.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(edit_wallet_icon, this)" src="images/cart.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(edit_wallet_icon, this)" src="images/suitcase.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(edit_wallet_icon, this)" src="images/camera.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(edit_wallet_icon, this)" src="images/bag.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(edit_wallet_icon, this)" src="images/wallet.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(edit_wallet_icon, this)" src="images/shape.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(edit_wallet_icon, this)" src="images/mobile.png" href="#"></div>
+                        <div role="presentation" class="dropdown-menu-item"><img
+                          onclick="changeIcon(edit_wallet_icon, this)" src="images/grantma.png" href="#"></div>
                         <div role="presentation" class="dropdown-menu-item empty"></div>
                         <div role="presentation" class="dropdown-menu-item empty"></div>
                       </div>
@@ -284,7 +306,8 @@
             </div>
             <div class="form-group">
               <label for="edit-wallet__balance">Баланс</label>
-              <td><input type="text" class="form-control modal__name_cat modal__name_cat--bg" id="edit-wallet__balance"></td>
+              <td><input type="text" class="form-control modal__name_cat modal__name_cat--bg" id="edit-wallet__balance">
+              </td>
             </div>
             <div class="form-group">
               <div class="col-xs-offset-2 col-xs-14 transfer_save">
@@ -331,10 +354,12 @@
               <table>
                 <tr>
                   <td>
-                    <input type="text" class="form-control modal__input--sum" id="sum_category__cat-history" placeholder="Сумма расхода">
+                    <input type="text" class="form-control modal__input--sum" id="sum_category__cat-history"
+                           placeholder="Сумма расхода">
                   </td>
                   <td>
-                    <label for="sum_category__cat-history" class="rub_sym_label"><img class="rub__symbol" src="images/rub.png"></label>
+                    <label for="sum_category__cat-history" class="rub_sym_label"><img class="rub__symbol"
+                                                                                      src="images/rub.png"></label>
                   </td>
                 </tr>
               </table>
@@ -347,10 +372,12 @@
               </div>
               <div>
                 <input type="radio" name="option" id="yesterday__cat-history" class="radio_btn"/>
-                <label for="yesterday__cat-history" id="yesterday_label__cat-history" onclick="changeYesterday(dch, itch, iych)">Вчера</label>
+                <label for="yesterday__cat-history" id="yesterday_label__cat-history"
+                       onclick="changeYesterday(dch, itch, iych)">Вчера</label>
               </div>
               <div id="other_cont__cat-history">
-                <input type="date" name="option" id="other__cat-history" class="radio-btn" onclick="changeDate(dch, itch, iych)"/>
+                <input type="date" name="option" id="other__cat-history" class="radio-btn"
+                       onclick="changeDate(dch, itch, iych)"/>
               </div>
             </div>
             <div class="form-group">
@@ -413,14 +440,17 @@
             <div class="btn-group col-xs-14 cur_btns radios-as-buttons">
               <div>
                 <input type="radio" name="option" id="today__history" class="radio_btn"/>
-                <label for="today__history" id="today_label__history" onclick="changeToday(dhi, ithi, iyhi)">Сегодня</label>
+                <label for="today__history" id="today_label__history"
+                       onclick="changeToday(dhi, ithi, iyhi)">Сегодня</label>
               </div>
               <div>
                 <input type="radio" name="option" id="yesterday__history" class="radio_btn"/>
-                <label for="yesterday__history" id="yesterday_label__history" onclick="changeYesterday(dhi, ithi, iyhi)">Вчера</label>
+                <label for="yesterday__history" id="yesterday_label__history"
+                       onclick="changeYesterday(dhi, ithi, iyhi)">Вчера</label>
               </div>
               <div id="other_cont__history">
-                <input type="date" name="option" id="other__history" class="radio-btn" onclick="changeDate(dhi, ithi, iyhi)"/>
+                <input type="date" name="option" id="other__history" class="radio-btn"
+                       onclick="changeDate(dhi, ithi, iyhi)"/>
               </div>
             </div>
             <div class="form-group">
@@ -441,52 +471,47 @@
   </div>
 </div>
 
-<!-- pop up окно для истории долгов, которые отдали мне-->
+<!-- pop up окно создания цели-->
 <div class="container">
-  <div class="modal fade" id="history-dept__modal-window" role="dialog">
+  <div class="modal fade" id="create-goal__modal-window" role="dialog">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">╳</button>
-          <h4 class="modal-title">История: долги</h4>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="name_lendor__history">Мне должен</label>
-              <input type="text" class="form-control modal__name_cat--bg" id="name_lendor__history">
-            </div>
-            <div class="form-group">
-              <table>
-                <tr>
-                  <td><input type="text" class="form-control modal__input--sum" id="sum_category"
-                             placeholder="Сумма долга"></td>
-                  <td><label for="sum_category" class="rub_sym_label"><img class="rub__symbol"
-                                                                           src="images/rub.png"></label></td>
-                </tr>
-              </table>
-            </div>
-            <div class="form-group">
-              <label for="select_purse">Счёт</label>
-              <select id="select_purse" class="col-xs-6 cur_select">
-                <option>Не выбрано</option>
-                <option>Кошелек</option>
-                <option>Сбербанк</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <div class="col-xs-offset-2 transfer_save">
-                <input type="submit" class="btn btn-default btn_margin" value="УДАЛИТЬ">
-                <input type="submit" class="btn btn-default btn_margin" value="СОХРАНИТЬ">
+        <div class="modal-wrapper">
+          <div class="modal-header">
+            <h4 class="modal-title">Новая цель</h4>
+          </div>
+          <div class="modal-body clearfix">
+            <form>
+              <div class="form-group">
+                <label for="name_lendor__history">Название цели</label>
+                <input type="text" class="form-control modal__name_cat--bg" id="name_lendor__history">
               </div>
-            </div>
-          </form>
+              <div class="form-group">
+
+                <label for="name_lendor__history">Необходимая сумма</label>
+                <input type="text" class="form-control modal__input--sum" id="sum_category" placeholder="Сумма">
+                <label for="sum_category" class="rub_sym_label"><img class="rub__symbol" src="images/rub.png"></label>
+
+              </div>
+              <div class="form-group">
+                <div class="col-xs-offset-2 transfer_save">
+                  <input type="submit" class="btn btn-default btn_margin" value="ДОБАВИТЬ">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-picture clearfix">
+          <button type="button" class="close" data-dismiss="modal">╳</button>
+          <div class="form-group clearfix">
+            <input type="file" name="file" id="file" class="inputfile"/>
+            <label for="file"><img src="images/goals-photo.png"><h6>Добавить фото к цели</h6></label>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -514,7 +539,6 @@
 <!-- endbuild -->
 
 
-
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
@@ -527,7 +551,9 @@
     $('.wallet-flex-container').slick({
       infinite: true,
       slidesToShow: 3,
-      slidesToScroll: 3
+      slidesToScroll: 3,
+      prevArrow: '<img src="images/left-arrow-slider.png">',
+      nextArrow: '<img src="images/right-arrow-slider.png">'
     });
   });
 </script>
