@@ -4,7 +4,6 @@
 
 // при загрузке страницы загружается полный список
 $(window).load(function () {
-    // $('#select_category').hide();
     showLast(data.operations);
 });
 
@@ -188,29 +187,12 @@ function printDateHistory(date) {
         if (new Date().getDate() - date.getDate() == 1) {
             $('.history__container').append("<h4>Вчера</h4>");
         } else {
-            $('.history__container').append("<h4>" + date.getDate() + "." + 0 +(date.getMonth()+1) + "." + date.getFullYear() + "</h4>");
+            $('.history__container').append("<h4>" + date.getDate() +
+                "." + 0 +(date.getMonth()+1) + "." + date.getFullYear() + "</h4>");
         }
     }
     $('.history__container').append("<div class='history-flex-container'></div>");
 }
-
-
-// function showData(arr) {
-//     sortDate(arr);
-//     if (arr.length == 0) {
-//         $('.history-page').append("<h4>Ничего не найдено</h4>");
-//         return;
-//     }
-//
-//     printDate(arr[0].date);
-//     printElement(arr[0]);
-//     for (var i = 1; i < arr.length; i++) {
-//         if (arr[i - 1].date - arr[i].date != 0) {
-//             printDate(arr[i].date);
-//         }
-//         printElement(arr[i]);
-//     }
-// }
 
 function printElement(element) {
     switch (element.category) {
