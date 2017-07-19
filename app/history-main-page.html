@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>History main page</title>
-
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- Latest compiled and minified CSS -->
@@ -21,10 +18,8 @@
           integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
           crossorigin="anonymous"></script>
 
-
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -48,15 +43,65 @@
         </div>
       </div>
 
-      <div class="goals-container">
-        <div class="goals-item" data-toggle="modal" data-target="#goals-modal-window">
-          <img class="goals-picture" src="images/goal-first.png">
-          <div class="bg">
-            <h2>Машина моей мечты ыааааа</h2>
-            <span>200 000 из 1 800 000 Р</span>
+      <div id="testCarousel" class="carousel slide goals-container" data-ride="carousel">
+        <!-- Индикаторы карусели -->
+        <ol class="carousel-indicators">
+          <!-- Перейти к слайду №0 с помощью соответствующего атрибута с индексом data-slide-to="0" -->
+          <li data-target="#testCarousel" data-slide-to="0" class="active"></li>
+          <!-- Перейти к слайду №1 с помощью соответствующего индекса data-slide-to="1" -->
+          <li data-target="#testCarousel" data-slide-to="1"></li>
+          <!-- Перейти к слайду №1 с помощью соответствующего индекса data-slide-to="2" -->
+          <li data-target="#testCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Слайды карусели -->
+        <div class="carousel-inner">
+          <!-- Слайд 1 -->
+          <div class="item active goals-item">
+            <img class="goals-picture" src="images/goal-first.png" alt="...">
+            <div class="bg">
+              <div class="carousel-caption">
+                <button>Новая цель</button>
+                <h2>Машина моей мечты ааааа</h2>
+                <h6>200 000 из 1 800 000 Р</h6>
+              </div>
+            </div>
+          </div>
+          <!-- Слайд 2 -->
+          <div class="item goals-item">
+            <img class="goals-picture" src="images/goal-second.png" alt="...">
+            <div class="bg">
+              <div class="carousel-caption">
+                <button>Новая цель</button>
+                <h2>Путешествие в Норвегию</h2>
+                <h6>54 000 из 250 000 Р</h6>
+              </div>
+            </div>
+          </div>
+          <!-- Слайд 3 -->
+          <div class="item goals-item">
+            <img class="goals-picture" src="images/goal-third.png" alt="...">
+            <div class="bg">
+              <div class="carousel-caption">
+                <button>Новая цель</button>
+                <h2>Iphone 8</h2>
+                <h6>8 000 из 80 000 Р</h6>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Навигация карусели (следующий или предыдущий слайд) -->
+        <!-- Кнопка, переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+        <a class="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
+          <img src="images/left-arrow.png">
+        </a>
+        <!-- Кнопка, переход на следующий слайд с помощью атрибута data-slide="next" -->
+        <a class="right carousel-control" href="#testCarousel" role="button" data-slide="next">
+          <img src="images/right-arrow.png">
+        </a>
       </div>
+
 
 
       <div class="wallet-flex-container">
@@ -101,7 +146,7 @@
   </div>
 </section>
 
-<div class="history-navigation">
+<section class="history-navigation clearfix">
   <div class="return-button">
     <p>
       <a href="index.html"><button type="button" class=""><img src="../images/left-arrow-button.png"> &nbsp;&nbsp; Назад </button></a>
@@ -132,7 +177,7 @@
       <option value="Одежда">Одежда</option>
     </select>
   </div>
-</div>
+</section>
 
 <section class="history-page">
 
@@ -468,10 +513,15 @@
 <!-- endbower -->
 <!-- endbuild -->
 
-<!-- build:js scripts/main.js -->
-<script src="scripts/main.js"></script>
-<!-- endbuild -->
 
+
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function () {
     $('.wallet-flex-container').slick({
