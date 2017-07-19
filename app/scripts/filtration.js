@@ -3,7 +3,7 @@
  */
 
 // при загрузке страницы загружается полный список
-$(window).load(function(){
+$(window).load(function () {
     $('#select_category').hide();
     showData(data.operations);
 });
@@ -115,6 +115,48 @@ var data = {
             category: 'Долги',
             price: -800,
             date: new Date(2017, 6, 19)
+        },
+        {
+            name: 'Кошелёк',
+            way: 'Рокетбанк',
+            category: 'Переводы',
+            price: 1000,
+            date: new Date(2017, 6, 19)
+        },
+        {
+            name: 'Никитин Боря',
+            way: 'Сбербанк',
+            category: 'Долги',
+            price: 1200,
+            date: new Date(2017, 6, 19)
+        },
+        {
+            name: 'Автомобиль',
+            way: 'Кошелёк',
+            category: 'Расходы',
+            price: -1000,
+            date: new Date(2017, 6, 19)
+        },
+        {
+            name: 'Никитин Никита',
+            way: 'Сбербанк',
+            category: 'Долги',
+            price: -800,
+            date: new Date(2017, 6, 19)
+        },
+        {
+            name: 'Подработка',
+            way: 'Сбербанк',
+            category: 'Доходы',
+            price: 5000,
+            date: new Date(2017, 6, 19)
+        },
+        {
+            name: 'Стипендия',
+            way: 'Сбербанк',
+            category: 'Доходы',
+            price: 1500,
+            date: new Date(2017, 6, 19)
         }
     ]
 };
@@ -130,7 +172,7 @@ function fillDataType() {
     var typeSel = $('#select_type option:selected').text(); // доход/расход
     var categorySel; // категория расходов
 
-    if(typeSel == "Расходы") {
+    if (typeSel == "Расходы") {
         $('#select_category').show();
         categorySel = $('#select_category option:selected').text();
     } else {
@@ -139,7 +181,7 @@ function fillDataType() {
     }
 
     var countPoints = 0;
-    for(var j = 0; j < data.operations.length; j++) {
+    for (var j = 0; j < data.operations.length; j++) {
         countPoints = 0;
         if (typeSel == "Не выбрано" || typeSel == data.operations[j].category) {
             countPoints++;
@@ -150,7 +192,7 @@ function fillDataType() {
         if (categorySel == "Не выбрано" || categorySel == data.operations[j].name) {
             countPoints++;
         }
-        if(countPoints == 3){
+        if (countPoints == 3) {
             filterData.push(data.operations[j]);
         }
     }
@@ -160,16 +202,15 @@ function fillDataType() {
 
 function showData(arr) {
     sortDate(arr);
-    if(arr.length == 0) {
+    if (arr.length == 0) {
         $('.history-page').append("<h4>Ничего не найдено</h4>");
         return;
-        //если ничего не найдено
     }
 
     printDate(arr[0].date);
     printElement(arr[0]);
-    for (var  i = 1; i < arr.length; i++){
-        if (arr[i-1].date - arr[i].date != 0) {
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i - 1].date - arr[i].date != 0) {
             printDate(arr[i].date);
         }
         printElement(arr[i]);
@@ -185,7 +226,7 @@ function printElement(element) {
                 "</div>");
             break;
         case "Долги":
-            if(element.price < 0){
+            if (element.price < 0) {
                 $('.history-flex-container:last-child').append("" +
                     "<div class='history-flex-item own-dept' data-toggle='modal' data-target='#history-own-dept__modal-window'>" +
                     printContentElement(element) +
@@ -214,36 +255,38 @@ function printElement(element) {
 
 function printContentElement(content) {
     return "<div>" +
-        "<strong>"+ content.name +"</strong><br>" +
-        "<small>"+ content.way + "</small> " +
+        "<strong>" + content.name + "</strong><br>" +
+        "<small>" + content.way + "</small> " +
         "</div> " +
         "<div> " +
-        "<small>"+ content.category +"</small> " +
+        "<small>" + content.category + "</small> " +
         "<br> " +
-        "<strong>"+ content.price +" &#8381;</strong>" +
+        "<strong>" + content.price + " &#8381;</strong>" +
         "</div> "
 }
 
 function printDate(date) {
-    if ((new Date().getDate() == date.getDate())&&(new Date().getMonth() == date.getMonth())&&(new Date().getFullYear() == date.getFullYear())){
+    if ((new Date().getDate() == date.getDate()) &&
+        (new Date().getMonth() == date.getMonth()) &&
+        (new Date().getFullYear() == date.getFullYear())) {
         $('.history-page').append("<h4>Сегодня</h4>");
     } else {
-        if (new Date().getDate() - date.getDate() == 1){
+        if (new Date().getDate() - date.getDate() == 1) {
             $('.history-page').append("<h4>Вчера</h4>");
         } else {
-            $('.history-page').append("<h4>" + date.getDate() + "." + date.getMonth() + "." + date.getFullYear() + "</h4>");
+            $('.history-page').append("<h4>" + date.getDate() + "." + 0 +(date.getMonth()+1) + "." + date.getFullYear() + "</h4>");
         }
     }
     $('.history-page').append("<div class='history-flex-container'></div>");
 }
 
 function sortDate(arr) {
-    for (var i = 0; i < arr.length - 1; i++){
-        for (var j = 0; j < arr.length - 1 - i; j++){
-            if (arr[j+1].date > arr[j].date){
+    for (var i = 0; i < arr.length - 1; i++) {
+        for (var j = 0; j < arr.length - 1 - i; j++) {
+            if (arr[j + 1].date > arr[j].date) {
                 var t = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = t;
+                arr[j] = arr[j + 1];
+                arr[j + 1] = t;
             }
         }
     }

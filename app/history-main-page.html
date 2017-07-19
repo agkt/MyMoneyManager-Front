@@ -153,20 +153,20 @@
     </p>
   </div>
   <div class="history-filtration">
-    <select class="select" id="select_way" onchange="fillDataType()">
+    <select class="select" id="select_way" onchange="fillDataType(data.operations)">
       <option value="Не выбрано">Не выбрано</option>
       <option value="Кошелёк">Кошелёк</option>
       <option value="Сбербанк">Сбербанк</option>
       <option value="Рокетбанк">Рокетбанк</option>
     </select>
-    <select class="select" id="select_type" onchange="fillDataType()">
+    <select class="select" id="select_type" onchange="fillDataType(data.operations)">
       <option value="Не выбрано">Не выбрано</option>
       <option value="Расходы">Расходы</option>
       <option value="Доходы">Доходы</option>
       <option value="Переводы">Переводы</option>
       <option value="Долги">Долги</option>
     </select>
-    <select class="select" id="select_category" onchange="fillDataType()">
+    <select class="select" id="select_category" onchange="fillDataType(data.operations)">
       <option value="Не выбрано">Не выбрано</option>
       <option value="Покупки">Покупки</option>
       <option value="Автомобиль">Автомобиль</option>

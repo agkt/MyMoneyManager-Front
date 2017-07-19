@@ -8,11 +8,11 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
 
     var data = google.visualization.arrayToDataTable([
-        ['Месяц', 'Доход', 'Расход'],
-        ['Январь', 20000, 18000],
-        ['Февраль', 25000, 23000],
-        ['Март', 20000, 22000],
-        ['Апрель', 23000, 23000]
+        ['Март', 'Доход', 'Расход'],
+        ['Апрель', 20000, 18000],
+        ['Май', 25000, 23000],
+        ['Июнь', 20000, 22000],
+        ['Июль', 23000, 23000]
     ]);
 
     var options = {
@@ -21,7 +21,7 @@ function drawChart() {
         // },
         bars: 'vertical',
         vAxis: {format: 'decimal'},
-        colors: ['#1b9e77', '#d95f02', '#7570b3']
+        colors: ['#ee364f', '#919191', '#7570b3']
     };
 
     var chart = new google.charts.Bar(document.getElementById('columnchart_material'));

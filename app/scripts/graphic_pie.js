@@ -18,6 +18,7 @@ function drawChart() {
 
     var options = {
         // title: 'My Daily Activities'
+        colors: ['#ee364f', '#999999', '#629fd1', '#333333', '#4bbf6b','#f3f5f6']
     };
     var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
 

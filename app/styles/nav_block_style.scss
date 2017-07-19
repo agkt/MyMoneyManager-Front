@@ -155,7 +155,7 @@ div, section ::before, ::after {
     position: relative;
     margin: 5px;
     padding: 18px;
-    width: 130px;
+    width: 135px;
     height: 130px;
     background: #ffffff;
     border-radius: 2px;
@@ -353,7 +353,7 @@ div, section ::before, ::after {
     border: solid 2px #dbe4eb;
 }
 
-.cur_btns button, .close, .return-button button, .history-button button, .select {
+.cur_btns button, .close, .return-button button, .history-button button, .select, .graphics__select-month {
     outline: 0 !important;
 }
 
@@ -497,7 +497,6 @@ div, section ::before, ::after {
 
 .graph__pie {
     width: 50%;
-    height: 300px;
     margin-right: 10px;
 }
 
@@ -521,55 +520,25 @@ div, section ::before, ::after {
     height: auto;
 }
 
-/******************/
-
-.slider-content{
-    top: 15%;
-    left: 49%;
-    color: black;
+#donutchart {
+    height: 300px;
 }
 
-.slider-content a {
-    margin: 0 auto;
-    padding: 7px;
-    color: black;
-    text-decoration: none;
+.graph__column {
+    padding-top: 25px;
 }
 
-.slider-frame {
-    display: none;
-}
-.slider-frame--active {
-    display: flex;
-    justify-content: space-between;
-}
-
-.slider-arrow {
-    width: 16px;
-    height: 25px;
-    cursor: pointer;
-}
-.slider-arrow--left {
-    position: absolute;
-    display: inline-flex;
-    top: 5px;
-    left: 10%;
-}
-.slider-arrow--right {
-    position: absolute;
-    display: inline-flex;
-    top: 5px;
-    right: 10%;
-}
-
-.slider {
-    width: 100%;
-    position: relative;
+.graphics__select-month {
+    margin-left: 10px;
     margin-top: 15px;
-    margin-bottom: 20px;
+    width: 350px;
+    height: 49px;
+    border-radius: 3.7px;
+    border: solid 2px #dcdcdc;
+    padding-left: 15px;
+    color: #2c2c2c;
+    opacity: 0.5;
 }
-
-/******************/
 
 .radios-as-buttons {
     width: 350px;
