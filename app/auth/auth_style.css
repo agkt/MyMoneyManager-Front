@@ -1,5 +1,10 @@
 @import "reset.css";
 
+@font-face {
+    font-family: RobotoSlab-Bold;
+    src: url(../fonts/RobotoSlab-Bold.ttf);
+}
+
 body {
     font-family: Roboto, sans-serif;
 }
@@ -25,11 +30,11 @@ body {
 }
 
 .auth_container__logotype {
-    width: 433px;
+    margin-top: 30px;
 }
 
 .auth_container__logo--paragraph {
-    width: 450px;
+    width: 300px;
     font-size: 24px;
     color: #333333;
     margin-top: 133px;
@@ -45,6 +50,10 @@ body {
     height: auto;
     background-color: white;
     margin: 150px auto 0;
+}
+
+.auth_container__window--container form {
+    margin-top: -20px;
 }
 
 .window__auth-title {
@@ -96,4 +105,38 @@ body {
 
 .window__auth-form--sign-up-link:hover {
     color: #489048;
+}
+
+.auth_container__logo-title {
+    width: 245px;
+    height: 150px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ee364f;
+    font-family: RobotoSlab-Bold, sans-serif;
+}
+
+.auth_container_slogan {
+    margin: 20px 0;
+}
+
+.auth_container__flex {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-left: 50px;
+}
+
+.no-margin {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.auth_container__text {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.logo{
+    height: 192px;
 }

@@ -148,22 +148,28 @@ body {
   margin-left: 60px;
 }
 
-.flex-wallet p {
+.flex-wallet h5 {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   text-align: left;
   color: #333333;
-  margin-top: 25px;
+  margin-top: 20px;
   word-wrap: break-word;
+  width: 81px;
+  float: right;
+  margin-right: 7%;
 }
 
-.flex-wallet p:last-child {
+.flex-wallet h6 {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-align: left;
   color: #333333;
   margin-top: 0;
+  float: right;
+  width: 81px;
+  margin-right: 7%;
 }
 
 .wallet-flex-container a:last-child {
@@ -303,5 +309,81 @@ body {
     padding-bottom: 0;
     width: 300px;
     top: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .carousel-caption {
+    right: 0;
+    left: 20%;
+    padding-bottom: 0;
+    width: 300px;
+    top: 50px;
+  }
+}
+
+
+@media screen and (min-width: 1132px) and (max-width: 1350px) {
+  .flex-wallet h5 {
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .flex-wallet h6 {
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .flex-wallet img {
+    width: 25%;
+    margin-right: 4%;
+  }
+  .plus img {
+    width: inherit;
+    margin-left: 80%;
+  }
+}
+@media screen and (max-width: 1132px) {
+  .flex-wallet img {
+    float: none;
+    margin: 8px auto 3px auto;
+    width: 30%;
+  }
+  .flex-wallet h5 {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    width: inherit;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .flex-wallet h6 {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: #333333;
+    margin-top: 0;
+    float: none;
+    width: inherit;
+    margin-right: 0;
+  }
+  .plus img {
+    margin-top: 12px;
+    margin-left: 50%;
+    width: inherit;
+  }
+  .header-content h3 {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+  }
+  .today-costs h2 {
+    font-family: Roboto, sans-serif;
+    font-size: 36px;
+  }
+  .header-content h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 45px;
   }
 }
